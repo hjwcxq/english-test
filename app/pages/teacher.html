@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>背词助教 · 教师端</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header>
+    <h1>背词助教 · 教师工作台</h1>
+    <button class="secondary" id="logout" hidden>退出登录</button>
+  </header>
+  <main>
+    <section class="card" id="login-card">
+      <h2>教师登录</h2>
+      <p class="muted">真实教师账户只能由本机受信初始化入口创建；本页不提供账户初始化或默认口令。</p>
+      <form id="login-form">
+        <label for="username">用户名</label>
+        <input id="username" name="username" autocomplete="username" required>
+        <label for="password">密码</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">登录</button>
+      </form>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section id="workbench" hidden>
+      <div class="grid">
+        <article class="card">
+          <h2>授权班级</h2>
+          <p id="identity" class="muted"></p>
+          <div id="students"></div>
+        </article>
+        <article class="card">
+          <h2>学情与配置</h2>
+          <p class="muted">待建设：真实学情、词库配置、导出与补测将在后续工作包实现。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    const statusNode = document.getElementById('status');
+    const loginCard = document.getElementById('login-card');
+    const workbench = document.getElementById('workbench');
+    const logoutButton = document.getElementById('logout');
+    let csrf = '';
+
+    function setStatus(text) {
+      statusNode.textContent = text;
+    }
+
+    function showLoggedIn(me) {
+      csrf = me.csrf_token;
+      loginCard.hidden = true;
+      workbench.hidden = false;
+      logoutButton.hidden = false;
+      document.getElementById('identity').textContent =
+        `${me.display_name} · 角色 ${me.role} · 授权班级 ${me.class_ids.join('、')}`;
+    }
+
+    async function loadStudents() {
+      const response = await fetch('/api/teacher/students', {credentials: 'same-origin'});
+      if (!response.ok) {
+        return;
+      }
+      const payload = await response.json();
+      const container = document.getElementById('students');
+      container.replaceChildren();
+      for (const student of payload.students) {
+        const row = document.createElement('p');
+        row.textContent = `${student.display_name} · ${student.student_id} · ${student.class_id}`;
+        container.appendChild(row);
+      }
+      if (!payload.students.length) {
+        const empty = document.createElement('p');
+        empty.className = 'muted';
+        empty.textContent = '授权班级暂无学生记录。';
+        container.appendChild(empty);
+      }
+    }
+
+    async function restore() {
+      const response = await fetch('/api/me', {credentials: 'same-origin'});
+      if (!response.ok) {
+        return;
+      }
+      const me = await response.json();
+      csrf = me.csrf_token || '';
+      if (me.role === 'teacher') {
+        showLoggedIn(me);
+        await loadStudents();
+      }
+    }
+
+    document.getElementById('login-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      setStatus('');
+      const field = document.getElementById('password');
+      const body = JSON.stringify({
+        username: document.getElementById('username').value,
+        password: field.value
+      });
+      const headers = {'Content-Type': 'application/json'};
+      if (csrf) {
+        headers['X-CSRF-Token'] = csrf;
+      }
+      const response = await fetch('/api/auth/teacher/login', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers,
+        body
+      });
+      if (!response.ok) {
+        setStatus('用户名或密码无效');
+        return;
+      }
+      const meResponse = await fetch('/api/me', {credentials: 'same-origin'});
+      if (!meResponse.ok) {
+        setStatus('登录后无法读取会话');
+        return;
+      }
+      field.value = '';
+      showLoggedIn(await meResponse.json());
+      await loadStudents();
+    });
+
+    logoutButton.addEventListener('click', async () => {
+      await fetch('/api/auth/logout', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {'X-CSRF-Token': csrf}
+      });
+      csrf = '';
+      document.getElementById('password').value = '';
+      workbench.hidden = true;
+      logoutButton.hidden = true;
+      loginCard.hidden = false;
+      setStatus('已退出');
+    });
+
+    restore().catch(() => setStatus('教师端初始化失败'));
+  </script>
+</body>
+</html>

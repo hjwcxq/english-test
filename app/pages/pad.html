@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>背词助教 · Pad</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header>
+    <h1>背词助教 · 学生 Pad</h1>
+    <div>
+      <button class="secondary" id="fullscreen">全屏</button>
+      <button class="secondary" id="exit">退出</button>
+    </div>
+  </header>
+  <main id="pad-shell" class="pad-shell">
+    <span class="pill">演示空间</span>
+    <h2>今日黄金任务</h2>
+    <p class="muted">本页是 W4 可操作骨架；请使用横屏触控 Pad 访问，正式学习流程尚未建设完成，相关入口会如实显示“待建设”。</p>
+
+    <section class="card">
+      <h3>标准 Unicode IPA 显示样例</h3>
+      <div class="ipa-samples">
+        <span class="ipd">phenomenon /fəˈnɒmɪnən/</span>
+        <span class="ipd">comprehension /ˌkɒmprɪˈhenʃn/</span>
+        <span class="ipd">accommodate /əˈkɒmədeɪt/</span>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>演示</h3>
+      <p class="muted">选择一名演示学生进入独立演示会话，不读取真实身份、学情、音频或管理数据。</p>
+      <div class="demo-list" id="demo-list"></div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section class="grid" style="margin-top:18px">
+      <article class="card">
+        <h3>看板</h3>
+        <p class="muted">待建设：真实任务队列、到期复习与抢救流程。</p>
+      </article>
+      <article class="card">
+        <h3>作答</h3>
+        <p class="muted">待建设：真实语音、拼写与语境题。</p>
+      </article>
+      <article class="card">
+        <h3>战报</h3>
+        <p class="muted">待建设：本轮结果与记忆变化。</p>
+      </article>
+    </section>
+  </main>
+  <script>
+    const statusNode = document.getElementById('status');
+    let csrf = '';
+    let current = null;
+
+    function setStatus(text) {
+      statusNode.textContent = text;
+    }
+
+    function renderIdentity(data) {
+      current = data;
+      csrf = data && data.csrf_token ? data.csrf_token : '';
+      if (current) {
+        setStatus(`当前演示身份：${current.display_name}（${current.student_id}）`);
+      }
+    }
+
+    async function readMe() {
+      const response = await fetch('/api/me', {credentials: 'same-origin'});
+      if (!response.ok) {
+        current = null;
+        csrf = '';
+        return;
+      }
+      renderIdentity(await response.json());
+    }
+
+    async function loginDemo(studentId) {
+      try {
+        await readMe();
+        const headers = {'Content-Type': 'application/json'};
+        if (csrf) {
+          headers['X-CSRF-Token'] = csrf;
+        }
+        const response = await fetch('/api/auth/demo/login', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers,
+          body: JSON.stringify({student_id: studentId})
+        });
+        if (!response.ok) {
+          setStatus(response.status === 403 ? '切换演示身份前需要有效会话校验' : '演示登录失败');
+          return;
+        }
+        await readMe();
+      } catch (error) {
+        setStatus('网络请求失败');
+      }
+    }
+
+    async function loadDemoStudents() {
+      const response = await fetch('/api/demo/students', {credentials: 'same-origin'});
+      const payload = await response.json();
+      const container = document.getElementById('demo-list');
+      container.replaceChildren();
+      for (const student of payload.students) {
+        const button = document.createElement('button');
+        button.className = 'secondary';
+        button.textContent = student.display_name;
+        button.addEventListener('click', () => loginDemo(student.student_id));
+        container.appendChild(button);
+      }
+    }
+
+    document.getElementById('fullscreen').addEventListener('click', async () => {
+      const shell = document.getElementById('pad-shell');
+      if (!document.fullscreenElement) {
+        await shell.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    });
+
+    document.getElementById('exit').addEventListener('click', async () => {
+      try {
+        await readMe();
+        const headers = {};
+        if (csrf) {
+          headers['X-CSRF-Token'] = csrf;
+        }
+        await fetch('/api/auth/logout', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers
+        });
+      } finally {
+        current = null;
+        csrf = '';
+        setStatus('已退出当前演示会话');
+      }
+    });
+
+    loadDemoStudents().then(readMe).catch(() => setStatus('演示数据加载失败'));
+  </script>
+</body>
+</html>
