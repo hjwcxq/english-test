@@ -1,0 +1,132 @@
+{
+  "algorithm_id": "ebb90-pilot-v1",
+  "assessment": {
+    "default_passing_score": 85,
+    "exact_normalization": [
+      "Unicode NFC",
+      "去除首尾空白",
+      "仅英文大小写不敏感"
+    ],
+    "forbidden_normalization": [
+      "拼写纠错",
+      "词形自动替换",
+      "省略必要介词",
+      "以同义词自动替代指定目标",
+      "自动接受未登记英美拼写变体",
+      "合并内部空白或标点"
+    ],
+    "manual_switch": "手动切换与模拟回答进入明确标识的演示测验，不更新真实学情；真实测验若切题型需创建受规则允许的新题目版本",
+    "mode_a": "认知目标、L3及无拼写要求的新词优先A；必须是有唯一正解的语境义，正确100、错误0，按选项ID判分",
+    "mode_b": "产出目标的抢救及前两次巩固使用B；拼图保留独立块ID，字母补全按冻结词形全量核对，正确100、错误0",
+    "mode_c": "产出目标的后续巩固、L4/L5终极考核使用C；精确词形/词块/句式与登记答案匹配，打字正确100、错误0",
+    "passing_comparison": "必要正确性满足且原始分数>=冻结合格线；显示取整不影响比较",
+    "recognition_precedence": "认知型考点不因抢救或次数增加被强制升级为拼写考核；教材L2、L1/L4多标签及L5用途按考点assessment_goal冻结",
+    "voice": "必须绑定真实音频摘要、作答ID、题目/规则版本与服务回执；必要产出正确性独立核实；准确度/流利度/完整度均须为0到100有限数，三维算术平均不预先取整",
+    "voice_failure": "无录音、转写不确定、超时或服务错误为PENDING_RETRY，不增加学习测试次数、不记学生失败、不推进记忆"
+  },
+  "bundle_version": "vocabulary-baseline-v1.0.0",
+  "content": {
+    "exam_origin": "源文宣称真题不等于已独立核实出处；无确切出处的后续例句标为原创或改编，不标为真实考题",
+    "groups": {
+      "L1_L4": 15,
+      "L3": 20,
+      "L5_A": 15,
+      "L5_B": 10
+    },
+    "l2_coverage": 0,
+    "learning_identity": "学生×目标义项/考点ID；表面形式ID只提供来源定位，不能代替已审核的义项和题目版本",
+    "material_gate": "完整语境与译文、目标义项、确定答案/允许词形、该模式专用素材及真实读音资产全部核实后，C1内容版本才能声明可出题",
+    "source_document": "DOC-VOCAB-02",
+    "source_only_not_quiz_ready": true,
+    "source_records": 60,
+    "surface_forms": 61
+  },
+  "decision_record": {
+    "approved_business_semantics": [
+      "R降至90%即到期，包含等号",
+      "R低于82%仍进入到期队列并标记紧迫",
+      "高稳定性词同样到期唤醒",
+      "抢救按预约时间复现，连续两次达标解除"
+    ],
+    "authority_scope": "记录业务选择；不提供仓库、部署、费用或身份授权",
+    "decision": "用户明确选择采用90%到期（推荐）",
+    "source": "current-conversation"
+  },
+  "parameter_provenance": {
+    "calibration": "未以真实学习数据校准；R是模型估计，不宣称已验证的个人记忆概率或标准FSRS实现",
+    "engineering_defaults": [
+      "12小时抢救间隔",
+      "初次成功S为1.5天",
+      "D初值5，成功减0.2、失败加1",
+      "alpha=0.5，beta=0.5",
+      "S限于0.5至365天",
+      "语音三维分数不取整算术平均"
+    ],
+    "original_requirements": [
+      "指数保留率公式",
+      "默认85分合格线",
+      "失败S重置0.5天",
+      "12至24小时抢救",
+      "连续两次达标解除抢救",
+      "默认每轮最多8词"
+    ]
+  },
+  "persistence": {
+    "answer_identity": "student_id+session_id+question_id+answer_id；同ID同正文返回原结果，同ID异正文冲突",
+    "atomic_result": "作答流水、评分、记忆更新、下次到期与回执在同一事务提交；实际服务等待在事务外",
+    "demo_isolation": "演示使用独立数据命名空间与可见标记，不与真实学生、音频、评分或统计合并",
+    "frozen_session": [
+      "student_id",
+      "session_id",
+      "target_sense_id",
+      "question_version",
+      "content_version",
+      "policy_version",
+      "passing_score"
+    ],
+    "history": "有效考核、内容/规则版本、原始评测与教师干预持久保留；升级不得只保留汇总，不以保留期任务删除学习流水"
+  },
+  "protocol": "vocabulary-policy-v1",
+  "scheduling": {
+    "alpha": 0.5,
+    "anchor": "有效完成且已判分的作答更新时间锚点；基础设施故障不更新。R从该锚点按正天数估计，负时间拒绝，不接受前端指定时钟",
+    "beta": 0.5,
+    "default_question_limit": 8,
+    "due_rule": "非新词且next_review_at<=now时可执行；普通复习在R<=0.9时到期，R<0.82仅标记overdue，不排除任务",
+    "eligibility_rule": "抢救区展示不等于立即可测；未来预约、有效免检期限、未完成会话内已冻结题目均不重复抽测",
+    "failed_stability_days": 0.5,
+    "failure_difficulty_delta": 1,
+    "first_success_stability_days": 1.5,
+    "growth": "使用本次提交前D和S：S_new=clamp(S_old*(1+alpha*(11-D_old)*S_old^(-beta)),0.5,365)；之后D_new=clamp(D_old-0.2,1,10)",
+    "initial_difficulty": 5,
+    "initial_success": "未激活考点首次正确达标：S=1.5、D=5、连续达标=1，并从本次有效提交时间安排1.5天后复习",
+    "maximum_difficulty": 10,
+    "maximum_stability_days": 365,
+    "minimum_difficulty": 1,
+    "minimum_stability_days": 0.5,
+    "new_items": "仅以教师登记target_levels匹配且素材完整的新考点补足余量；不为凑题抽测未来休眠词",
+    "overdue_below_retention": 0.82,
+    "priority": [
+      "due_rescue_by_next_review_at_then_target_id",
+      "due_review_by_retention_then_next_review_at_then_target_id",
+      "new_by_target_level_then_source_number_then_variant"
+    ],
+    "rescue_interval_hours": 12,
+    "rescue_passes_required": 2,
+    "rescue_success": "首次抢救达标保持S=0.5与抢救标记，12小时后再测；第二次连续达标才按增长公式更新S并解除抢救；中间失败清零连续达标并重置12小时",
+    "seconds_per_day": 86400,
+    "stable_words_permanently_exempt": false,
+    "success_difficulty_delta": -0.2,
+    "target_retention": 0.9,
+    "teacher_override": "有权教师最近一次有效干预生效并留痕；强制唤醒立即到期进入抢救。免检必须有明确expires_at，默认30天，到期恢复原记忆状态调度；不伪造学生成功或修改历史分数",
+    "time_zone": "Asia/Shanghai",
+    "timestamp_format": "RFC3339带时区；持久保存UTC",
+    "zone_precedence": [
+      "unactivated_new",
+      "critical_rescue",
+      "golden_review",
+      "consolidated_sleep"
+    ]
+  },
+  "status": "READY_FOR_TRUSTED_PROJECT_COMMIT"
+}

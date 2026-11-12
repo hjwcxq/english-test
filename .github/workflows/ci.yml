@@ -1,0 +1,66 @@
+name: english-test-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exact tested commit
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - run: python -m unittest discover -s tests -v
+
+  attest-tested-merge:
+    needs: python-tests
+    if: ${{ always() && !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      # 独立证明任务不检出或执行 PR 代码，仅核验测试结果和被测提交。
+      - uses: actions/github-script@v7
+        env:
+          TEST_RESULT: ${{ needs.python-tests.result }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            if (!/^[0-9a-f]{40}$/.test(context.sha)) {
+              throw new Error('INVALID_TESTED_SHA');
+            }
+            if (context.eventName === 'pull_request') {
+              const pr = context.payload.pull_request;
+              const { data: commit } = await github.rest.git.getCommit({
+                owner, repo, commit_sha: context.sha,
+              });
+              const parents = commit.parents.map(parent => parent.sha);
+              if (parents.length !== 2 || parents[0] !== pr.base.sha || parents[1] !== pr.head.sha) {
+                throw new Error('TESTED_MERGE_PARENT_MISMATCH');
+              }
+            }
+            const passed = process.env.TEST_RESULT === 'success';
+            await github.rest.checks.create({
+              owner, repo, name: 'python-tests', head_sha: context.sha,
+              external_id: `english-test-ci:${context.runId}:${process.env.GITHUB_RUN_ATTEMPT}`,
+              details_url: `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+              status: 'completed', conclusion: passed ? 'success' : 'failure',
+              output: {
+                title: passed ? '固定测试通过' : '固定测试失败',
+                summary: `Tested SHA: ${context.sha}\nTest job result: ${process.env.TEST_RESULT}`,
+              },
+            });

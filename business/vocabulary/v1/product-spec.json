@@ -1,0 +1,756 @@
+{
+  "data_definitions": {
+    "acceptance_vectors_digest": "3c74f070abed3da95e11371f89c8b5f2fafc084d472d4e8368f26f444fd0fb10",
+    "algorithm_id": "ebb90-pilot-v1",
+    "answer_record": "不可变有效作答与唯一回执，保留原始输入/评测、分数和S/D/next_review_at变化",
+    "bundle_version": "vocabulary-baseline-v1.0.0",
+    "content_bundle_digest": "48be6f0c449c76228a6c99ecb42103141d745c6bf70e991b66caddf8aec0734e",
+    "content_version": "冻结目标义项、句式变体、IPA、题型素材、答案和音频来源，旧版本仍可解释",
+    "demo_data": "独立命名空间、明确演示标识，不进入真实统计或导出",
+    "learning_unit": "学生×目标义项/考点ID，关联源编号与表面形式；不是仅按英文字符串合并学情",
+    "policy_digest": "4e2855a8e4a3aff2917427c8885610943346c1e91ea6fe31f6af213feefb425b",
+    "policy_version": "冻结算法参数、判分规则、及格线、题量及所需服务能力",
+    "retrievability": "R：基于有效记忆锚点实时计算的模型估计，接口返回原始值，界面显示百分比",
+    "stability": "S：模型估计保留率衰减至90%所需天数；首版工程估计，非半衰期"
+  },
+  "goal": "教师准备学生及词库，学生通过真实身份取得个性化任务并完成考核，结果和记忆调度持久保存，教师查看真实学情并生成个性化补测；升级与恢复保留有效数据。",
+  "out_of_scope": [
+    "将60条样本视为已齐备5500+词库或独立L2教材库",
+    "将首版工程记忆参数视为已校准的真实认知概率",
+    "用演示身份、模拟回答或模型文本替代真实人脸、音频及业务验收",
+    "从离线规则包推导生产发布、费用或身份授权"
+  ],
+  "protocol": "product-spec-v1",
+  "quality_targets": {
+    "device": "在实际Pad横屏/全屏/摄像头/麦克风与教师浏览器分别执行适用场景并保存设备信息",
+    "durability": "已确认作答事务重启后可读且不重复推进；实际RTO/RPO由试点环境登记并按隔离还原实测",
+    "effectiveness": "不预先宣称效率提升3倍、节省固定工时或真实记忆概率，保留实际试点测量依据",
+    "external_services": "真实账号、模型ID、录音、回执和实际能力核实后才记服务通过；演示或夹具独立标记",
+    "scheduler": "在已登记试点硬件上，以单学生4000记忆节点独立测量组题计算P95<=100ms；人脸/音频网络时延另记。60条样本不证明全量负载达标"
+  },
+  "roles": [
+    {
+      "description": "已识别的当前学生；公用Pad每次仅保持一个学生会话",
+      "key": "student",
+      "permissions": [
+        "读取本人看板与冻结任务",
+        "提交本人当前题目的唯一作答",
+        "查看本轮结果并退出"
+      ]
+    },
+    {
+      "description": "已认证且获班级授权的教师",
+      "key": "teacher",
+      "permissions": [
+        "管理授权学生及词库内容版本",
+        "查看授权班级与学生学情",
+        "调整题量/合格线并对后续测验生效",
+        "留痕干预与导出授权补测"
+      ]
+    },
+    {
+      "description": "登记模型渠道、实际环境、恢复及独立QA执行的受信身份",
+      "key": "operator",
+      "permissions": [
+        "配置获授权的服务与凭据",
+        "执行受限备份还原与带数据升级",
+        "按冻结业务预期采集独立验收证据"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "key": "VOC-UI",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "学生端独立/pad，横屏触控、全屏可进入退出，标准Unicode IPA完整显示；页面没有教师管理和密钥配置入口。"
+    },
+    {
+      "key": "VOC-IDENTITY",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "真实摄像头画面与登记/匹配结果分别验证；未知或不确定人脸不进入真实学生会话。学生会话只访问本人，退登销毁访问能力和本地敏感缓存。"
+    },
+    {
+      "key": "VOC-DEMO",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "四名原文演示学生、手动体验及模拟标准/错误回答有可见演示标记；使用独立数据空间，不更新真实身份、音频、学情及班级统计。"
+    },
+    {
+      "key": "VOC-AUTH",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "教师页面/API/明细/统计/导出/配置全部核实实际身份和班级授权；学生会话及浏览器响应不返回服务秘密，不能只隐藏按钮。"
+    },
+    {
+      "key": "VOC-MEMORY",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "采用ebb90-pilot-v1：R=0.9^(t/S)，S是衰减至90%的天数，不称半衰期。用户确认R<=90%到期、R<82%仍复习、高S同样到期唤醒；UTC带时区时间戳、86400秒/天，上海日期用于日统计。"
+    },
+    {
+      "key": "VOC-QUEUE",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "新词、抢救、到期复习、未到期休眠互斥展示；抢救按next_review_at到期才可执行，连续两次达标解除。依次选择到期抢救、按R从低到高的到期复习、匹配target_levels且素材完整的新词，默认最多8词；同一考点不重复填充，不为凑题抽未来词。"
+    },
+    {
+      "key": "VOC-GROWTH",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "工程初值与公式见policy.json：首次成功S=1.5、D=5；失败S=0.5、D加1并在12小时后抢救。已学成功用旧D/S计算S_new=S*(1+0.5*(11-D)*S^(-0.5))再约束0.5..365，之后D减0.2约束1..10。第一次抢救成功保持S=0.5，第二次连续成功才增长。参数是未校准工程估计，版本冻结。"
+    },
+    {
+      "key": "VOC-MODE-A",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "认知型考点优先语境四选一；L3考查目标僻义而非普通义，必须有唯一可解释正解与三个有效干扰项。认知目标不因抢救或次数提升被强制拼写冷僻长词。"
+    },
+    {
+      "key": "VOC-MODE-B",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "产出型抢救及前两次巩固使用声音/锚点/音节或字母补全，目标词形唯一；重复拼块各有独立ID，可撤销，最终串与冻结答案精确匹配。"
+    },
+    {
+      "key": "VOC-MODE-C",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "产出型后续巩固和L4/L5终极考核采用双语语境、锚点或派生提示的精确产出；词形、句式和必要介词必须正确，语音高分不补偿错字母。"
+    },
+    {
+      "key": "VOC-SCORE",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "默认合格线85分且包含等号；A/B/打字确定性正确100、错误0。真实语音三维有限分数的未取整算术平均与冻结合格线比较，且必要正确性必须通过。仅NFC、首尾空白与英文大小写规范化，不纠错或自动接受同义/拼写变体。"
+    },
+    {
+      "key": "VOC-VOICE",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "真实语音提交包含实际录音及摘要，服务回执绑定学生、题目版本与作答ID；无音频、转写不确定或服务失败进入PENDING_RETRY，不记学生不会，不更新测试次数和记忆。支持英/美实际读音播放并核实资产。"
+    },
+    {
+      "key": "VOC-CONTENT",
+      "source_keys": [
+        "functional",
+        "vocabulary",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "原文60条编号逐条追溯；L1/L4保留多标签，58保留两个句式，词块IPA注明仅核心词。以学生×目标义项/考点保存学习状态，同形不同义不混同。素材缺完整语境、译文、准确答案、专用干扰/拼图或音频时不可出题且原因可观察。"
+    },
+    {
+      "key": "VOC-IDEMPOTENCY",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "每个真实提交绑定学生、会话、冻结内容/题目/规则版本与唯一作答ID；同ID同正文重放原结果，同ID异正文拒绝。评分、流水、记忆与到期更新一次性事务提交；服务等待不持事务锁。"
+    },
+    {
+      "key": "VOC-TEACHER",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "班级指标、排行榜、学生曲线/四区/错因/历史由授权范围真实流水重算，支持回到来源记录；没有真实记录时显示无数据，不用演示数字填充。"
+    },
+    {
+      "key": "VOC-RULES",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "内容及考核规则版本化；教师改词库、合格线和题量只影响后续新测验，在途题目使用冻结版本，历史答案、原评分及记忆变化仍可解释。"
+    },
+    {
+      "key": "VOC-OVERRIDE",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "有权教师干预保存身份、原因、原/新状态与时间；最近有效干预生效，强制唤醒立即到期进入抢救；免检须有expires_at，默认30天，到期恢复正常调度。不伪造成功作答或覆写历史。"
+    },
+    {
+      "key": "VOC-PRINT",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "每位未达标学生输出本人待抢救错词和必要提示，班级范围受授权限制，支持A4、HTML和DOC；不把全班同一张词表冒充个性化补测。"
+    },
+    {
+      "key": "VOC-CONFIG",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "教师端只向有渠道配置权限的身份开放五渠道；默认DashScope。每个渠道独立保存秘密并按实际模型核实文本/音频/发音评测能力；文本接口成功不代表可用语音评测，无真实凭据的渠道显示未配置。"
+    },
+    {
+      "key": "VOC-REPORT",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "战报中的达标数、抢救解除数、S变化由该次有效流水重算；预计耗时与节省工时明确估算公式/样本，未测效果不当成事实。退登后下一学生无法复用前会话。"
+    },
+    {
+      "key": "VOC-RECOVERY",
+      "source_keys": [
+        "functional",
+        "policy",
+        "acceptance"
+      ],
+      "statement": "账户、真实考核流水、音频引用、记忆、规则/内容版本及干预记录持久保存；在首次有效试用数据前验证SQLite一致备份、隔离还原与接手，带数据升级后复习/学情/补测与幂等回执继续成立。"
+    }
+  ],
+  "scenarios": [
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "device"
+      ],
+      "key": "VOC-UI-01",
+      "preconditions": [
+        "已登记实际Pad与浏览器，使用/pad"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-UI"
+      ],
+      "steps": [
+        {
+          "action": "横屏操作并进入/退出全屏，显示三个原文IPA样本",
+          "expected": "关键操作可触达，全屏可恢复，IPA逐字符一致；没有教师或密钥设置入口"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "database"
+      ],
+      "key": "VOC-DEMO-01",
+      "preconditions": [
+        "独立演示环境有原文四名演示学生，真实库有一条保护记录"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-DEMO"
+      ],
+      "steps": [
+        {
+          "action": "切换四个演示身份并使用标准/错误模拟回答和手动切题型",
+          "expected": "每处显示演示标记，四种学情不同；真实保护记录和真实班级统计摘要不变"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "api",
+        "database"
+      ],
+      "key": "VOC-IDENTITY-01",
+      "preconditions": [
+        "两位真实学生甲乙均有不同记录"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-IDENTITY"
+      ],
+      "steps": [
+        {
+          "action": "甲登录、作答、退登，乙登录并重放甲会话/缓存请求",
+          "expected": "乙仅见本人，旧会话拒绝，缓存无甲记录，服务端不能复用甲身份"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "api",
+        "browser"
+      ],
+      "key": "VOC-AUTH-01",
+      "preconditions": [
+        "教师仅获A班授权，学生身份和B班均已登记"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-AUTH"
+      ],
+      "steps": [
+        {
+          "action": "学生请求教师页面/API/导出/配置；教师请求B班明细",
+          "expected": "均拒绝越权且无B班或秘密字段；获授权A班查询可用"
+        }
+      ]
+    },
+    {
+      "actor_role": "operator",
+      "evidence_types": [
+        "device",
+        "service",
+        "database"
+      ],
+      "key": "VOC-FACE-01",
+      "preconditions": [
+        "实际摄像头、教师授权登记及真实匹配服务可用"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-IDENTITY"
+      ],
+      "steps": [
+        {
+          "action": "登记甲后由甲、未登记人员与不确定画面分别识别",
+          "expected": "甲匹配正确；未知/不确定拒绝真实会话；保留摄像头、登记/匹配实际结果，动画不作身份证明"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-QUEUE-01",
+      "preconditions": [
+        "受控时钟、冻结考点素材和不同到期/层级状态"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-QUEUE"
+      ],
+      "steps": [
+        {
+          "action": "两名不同历史的学生分别取题，重复读取同一冻结会话",
+          "expected": "各自遵守抢救/到期/新词顺序与题量，未来预约不入队；同会话不重复抽同一考点"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-TIME-01",
+      "preconditions": [
+        "使用固定UTC时钟、S/D与明确next_review_at"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-MEMORY",
+        "VOC-GROWTH"
+      ],
+      "steps": [
+        {
+          "action": "跨越90%到期前后、81%逾期、高S到期和12小时抢救边界",
+          "expected": "到期含等号，81%不遗漏，高S不永久免检，抢救未来不提前；S/D及下次时间与固定预期一致"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "api",
+        "database"
+      ],
+      "key": "VOC-MODE-A-01",
+      "preconditions": [
+        "harbor目标为心怀疑虑，题目为独立原创验收语境"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-MODE-A"
+      ],
+      "steps": [
+        {
+          "action": "选择正确语境义及港口陷阱；将认知目标置于抢救状态",
+          "expected": "只有心怀义通过，港口失败；认知目标仍A，不因抢救被迫拼写"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "api",
+        "database"
+      ],
+      "key": "VOC-MODE-B-01",
+      "preconditions": [
+        "phenomenon与accommodate已具独立块ID/锚点素材"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-MODE-B"
+      ],
+      "steps": [
+        {
+          "action": "拼对、撤销重拼、重复音节块、漏双写字母",
+          "expected": "按块ID保留重复片段；最终精确目标通过，漏字母失败且只提交一次有效作答"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-MODE-C-01",
+      "preconditions": [
+        "imperceptible、固定介词词块与58两句式分别具冻结语境/答案"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-MODE-C"
+      ],
+      "steps": [
+        {
+          "action": "提交正确、错字母、错词形、缺介词及两种倒装配对",
+          "expected": "只接受登记答案；高语音分不掩盖错字母，Hardly配when、No sooner配than，义项/句式版本不合并"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-SCORE-01",
+      "preconditions": [
+        "默认合格线85，已学S=4、D=5，旧状态无抢救"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-SCORE",
+        "VOC-GROWTH"
+      ],
+      "steps": [
+        {
+          "action": "提交原始84.999、85、85.001与错误产出高分；测试两次连续抢救达标",
+          "expected": "低于85失败，等于85通过；正常成功S=10、D=4.8，失败S=0.5、D=6、12小时后抢救；一次抢救成功不提前解除"
+        }
+      ]
+    },
+    {
+      "actor_role": "operator",
+      "evidence_types": [
+        "device",
+        "service",
+        "database"
+      ],
+      "key": "VOC-VOICE-01",
+      "preconditions": [
+        "真实麦克风与已核实可评测模型，使用固定录音版本"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-VOICE"
+      ],
+      "steps": [
+        {
+          "action": "提交实际正确/错误录音、无录音、超时及转写不确定；播放英美读音",
+          "expected": "评分与音频摘要/作答ID绑定；错误产出失败，技术故障PENDING_RETRY且记忆不变；实际读音可播放"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "file",
+        "api",
+        "database",
+        "browser"
+      ],
+      "key": "VOC-CONTENT-01",
+      "preconditions": [
+        "导入原始60条并保留来源摘要"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-CONTENT"
+      ],
+      "steps": [
+        {
+          "action": "核对全部编号、61形式、多标签、双IPA与缺素材条目，编辑一个义项并读取旧记录",
+          "expected": "源1至60齐全无重复；58两形式；L1/L4不丢标签；缺素材不可出题且原因明确，旧义项/内容版本仍可解释"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-IDEMPOTENCY-01",
+      "preconditions": [
+        "实际数据库与同一冻结题目，有唯一answer_id"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-IDEMPOTENCY"
+      ],
+      "steps": [
+        {
+          "action": "原提交丢回执后并发重发，再以相同ID换答案",
+          "expected": "只有一条有效流水/一次记忆更新；同内容原结果重放，异内容409冲突，不重复加次数"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "browser",
+        "api",
+        "database"
+      ],
+      "key": "VOC-TEACHER-01",
+      "preconditions": [
+        "授权A班包含两名有不同真实结果的学生"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-TEACHER"
+      ],
+      "steps": [
+        {
+          "action": "查班级大盘、顽固词TOP10、学生详情/历史并核对来源流水",
+          "expected": "人数、词次、区间、错因和统计可由明细重算，空数据不填演示数字，授权范围一致"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "api",
+        "database",
+        "browser"
+      ],
+      "key": "VOC-RULES-01",
+      "preconditions": [
+        "已开启合格线85、题量8的旧测验"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-RULES"
+      ],
+      "steps": [
+        {
+          "action": "改合格线90、题量4并修改词义，旧测验提交后开新测验",
+          "expected": "旧测验仍用85/8与旧内容，新测验用90/4与新内容，历史评分版本不被覆写"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "api",
+        "database"
+      ],
+      "key": "VOC-OVERRIDE-01",
+      "preconditions": [
+        "有权教师、固定时钟、原始流水与明确干预原因"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-OVERRIDE"
+      ],
+      "steps": [
+        {
+          "action": "强制唤醒、再登记有到期时间的免检，并跨越免检到期点",
+          "expected": "按最新有效干预调度，过期后重新进入原记忆调度；保存前后状态与身份/原因，原流水和分数不改"
+        }
+      ]
+    },
+    {
+      "actor_role": "teacher",
+      "evidence_types": [
+        "file",
+        "browser",
+        "database"
+      ],
+      "key": "VOC-PRINT-01",
+      "preconditions": [
+        "甲错phenomenon，乙错accommodate，分属授权班级"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-PRINT"
+      ],
+      "steps": [
+        {
+          "action": "输出个性化A4、HTML及DOC补测名单，再请求未授权班级导出",
+          "expected": "甲乙词表各自准确，不混入无关学生/词，必要提示完整；格式实际可打开/打印，越权拒绝"
+        }
+      ]
+    },
+    {
+      "actor_role": "operator",
+      "evidence_types": [
+        "api",
+        "service",
+        "browser"
+      ],
+      "key": "VOC-CONFIG-01",
+      "preconditions": [
+        "已登记真实渠道/模型能力和获授权的配置身份"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-CONFIG",
+        "VOC-AUTH"
+      ],
+      "steps": [
+        {
+          "action": "分别配置/切换五渠道、用文本型模型尝试语音、模拟服务失效及学生越权",
+          "expected": "秘密独立保存不回显，未核实语音能力不假通过，错误可重试；仅凭模型名或文本响应不宣告音频评测成功"
+        }
+      ]
+    },
+    {
+      "actor_role": "student",
+      "evidence_types": [
+        "browser",
+        "api",
+        "database"
+      ],
+      "key": "VOC-REPORT-01",
+      "preconditions": [
+        "本轮有普通达标、抢救解除和未达标真实流水"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-REPORT"
+      ],
+      "steps": [
+        {
+          "action": "完成本轮看战报、按流水重算，随后退登并换下一学生",
+          "expected": "达标与解除抢救分别计数，S变化来自本轮，估算指标标明依据；退登结束会话且下一学生不见前记录"
+        }
+      ]
+    },
+    {
+      "actor_role": "operator",
+      "evidence_types": [
+        "database",
+        "api",
+        "file",
+        "log"
+      ],
+      "key": "VOC-RECOVERY-01",
+      "preconditions": [
+        "独立试用数据库已有真实授权测试数据、音频引用及冻结版本"
+      ],
+      "required": true,
+      "rule_keys": [
+        "VOC-RECOVERY",
+        "VOC-IDEMPOTENCY"
+      ],
+      "steps": [
+        {
+          "action": "在活跃SQLite一致备份并隔离还原、重启及带数据升级，再重放原answer_id并查看到期/学情/补测",
+          "expected": "账户、流水、音频引用、S/D/下次任务及补测一致；旧回执重放不产生新评分；接手/恢复时间与实测RTO/RPO有记录"
+        }
+      ]
+    }
+  ],
+  "scope": [
+    "独立/pad与/teacher及角色隔离",
+    "真实摄像头登记/匹配与独立演示身份",
+    "60条来源、61个表面形式的内容版本及义项考点建模",
+    "90%到期、抢救/复习/休眠/新词分区与个性化组题",
+    "三阶题型、精确判分、真实音频和适用语音评测",
+    "教师学情、规则/词库配置、可追溯干预及A4/HTML/DOC补测",
+    "五渠道配置按实际能力分别验收",
+    "学习流水持久、幂等提交、隔离备份还原及带数据升级"
+  ],
+  "source_documents": [
+    {
+      "key": "functional",
+      "path": "docs/01_办公室AI智能背词助教终端_功能性需求.md",
+      "sha256": "7d66ee1959401c13e234163d146d4d604713fe574533d034aca3299cdbf126b4",
+      "version": "V3.1"
+    },
+    {
+      "key": "vocabulary",
+      "path": "docs/02_同济附中_上海高考高分分级词库构建方案与核心词表.md",
+      "sha256": "565c94488001e681c8723bc79b07ad2455f9d0f1387dc07a49f724db8aa1aea8",
+      "version": "DOC-VOCAB-02"
+    },
+    {
+      "key": "policy",
+      "path": "policy.json",
+      "sha256": "f1b9169be14fb1e4644daf79398e1c620e330de9444c741cec1cf6c58db8a01d",
+      "version": "vocabulary-baseline-v1.0.0"
+    },
+    {
+      "key": "acceptance",
+      "path": "acceptance-vectors.json",
+      "sha256": "1e175ac1cf74fcaf9096bdad17e3016b63bca5f935a9398571645fd7c1adb1e9",
+      "version": "vocabulary-baseline-v1.0.0"
+    }
+  ],
+  "title": "办公室AI智能背词助教系统：首版业务基线"
+}

@@ -1,0 +1,4212 @@
+{
+  "bundle_version": "vocabulary-baseline-v1.0.0",
+  "entries": [
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "phenomenon",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "phenomenon"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-001",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "现象；杰出的人或事物",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/fəˈnɒmɪnən/"
+      ],
+      "source": {
+        "cells": [
+          "1",
+          "**phenomenon**",
+          "`/fəˈnɒmɪnən/`",
+          "n.",
+          "现象；杰出的人或事物",
+          "`natural phenomenon` 自然现象；复数：**`phenomena`**",
+          "Summary 高频上位词；学生极易把中间 `e` 拼成 `i` (`phenominon`)，或忽略复数 `phenomena` 后谓语用复数。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 69,
+        "raw_row": "| 1 | **phenomenon** | `/fəˈnɒmɪnən/` | n. | 现象；杰出的人或事物 | `natural phenomenon` 自然现象；复数：**`phenomena`** | Summary 高频上位词；学生极易把中间 `e` 拼成 `i` (`phenominon`)，或忽略复数 `phenomena` 后谓语用复数。 |",
+        "row_sha256": "7bf1f1ca4ad62a8477ea39a429a5f3d7783bad829b42275642b492834b9f4966"
+      },
+      "source_number": 1,
+      "source_tip": "Summary 高频上位词；学生极易把中间 e 拼成 i (phenominon)，或忽略复数 phenomena 后谓语用复数。",
+      "source_usage": "natural phenomenon 自然现象；复数：phenomena"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "comprehension",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "comprehension"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-002",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "理解力；领悟；包含",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌkɒmprɪˈhenʃn/"
+      ],
+      "source": {
+        "cells": [
+          "2",
+          "**comprehension**",
+          "`/ˌkɒmprɪˈhenʃn/`",
+          "n.",
+          "理解力；领悟；包含",
+          "`beyond one's comprehension` 难以理解；adj. **`comprehensive`** 综合的、全面的",
+          "必须区分 `comprehensible`（可理解的）与 `comprehensive`（全面的，上海十一选十高频干扰对）。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 70,
+        "raw_row": "| 2 | **comprehension** | `/ˌkɒmprɪˈhenʃn/` | n. | 理解力；领悟；包含 | `beyond one's comprehension` 难以理解；adj. **`comprehensive`** 综合的、全面的 | 必须区分 `comprehensible`（可理解的）与 `comprehensive`（全面的，上海十一选十高频干扰对）。 |",
+        "row_sha256": "b5165bdbb27e72acad9c656f805597cd54bcda7bb8c32391afbc4338807b4370"
+      },
+      "source_number": 2,
+      "source_tip": "必须区分 comprehensible（可理解的）与 comprehensive（全面的，上海十一选十高频干扰对）。",
+      "source_usage": "beyond one's comprehension 难以理解；adj. comprehensive 综合的、全面的"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "sustainable",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "sustainable"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-003",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "可持续的；站得住脚的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/səˈsteɪnəbl/"
+      ],
+      "source": {
+        "cells": [
+          "3",
+          "**sustainable**",
+          "`/səˈsteɪnəbl/`",
+          "adj.",
+          "可持续的；站得住脚的",
+          "`sustainable development`；n. **`sustainability`**",
+          "人与自然主题必考词；注意动词原形 `sustain`（维持；遭受）在阅读中的用法。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 71,
+        "raw_row": "| 3 | **sustainable** | `/səˈsteɪnəbl/` | adj. | 可持续的；站得住脚的 | `sustainable development`；n. **`sustainability`** | 人与自然主题必考词；注意动词原形 `sustain`（维持；遭受）在阅读中的用法。 |",
+        "row_sha256": "1b5967fb238b3073fab63388bfcce5230f02279151f805ef9f679affd9d10055"
+      },
+      "source_number": 3,
+      "source_tip": "人与自然主题必考词；注意动词原形 sustain（维持；遭受）在阅读中的用法。",
+      "source_usage": "sustainable development；n. sustainability"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "imperceptible",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "imperceptible"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-004",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "极细微的；察觉不到的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌɪmpəˈseptəbl/"
+      ],
+      "source": {
+        "cells": [
+          "4",
+          "**imperceptible**",
+          "`/ˌɪmpəˈseptəbl/`",
+          "adj.",
+          "极细微的；察觉不到的",
+          "`an imperceptible change` 微乎其微的变化；adv. `imperceptibly`",
+          "由考纲词 `perceive`（感知）经 `im-` + `-ible` 二次派生，上海卷十一选十经典压轴词。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 72,
+        "raw_row": "| 4 | **imperceptible** | `/ˌɪmpəˈseptəbl/` | adj. | 极细微的；察觉不到的 | `an imperceptible change` 微乎其微的变化；adv. `imperceptibly` | 由考纲词 `perceive`（感知）经 `im-` + `-ible` 二次派生，上海卷十一选十经典压轴词。 |",
+        "row_sha256": "c11394baa38289ee10b02ed6b7f0bb724f6f6294a0a0407c8c253f3cdca6a66a"
+      },
+      "source_number": 4,
+      "source_tip": "由考纲词 perceive（感知）经 im- + -ible 二次派生，上海卷十一选十经典压轴词。",
+      "source_usage": "an imperceptible change 微乎其微的变化；adv. imperceptibly"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "irreplaceable",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "irreplaceable"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-005",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "不可替代的；独一无二的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌɪrɪˈpleɪsəbl/"
+      ],
+      "source": {
+        "cells": [
+          "5",
+          "**irreplaceable**",
+          "`/ˌɪrɪˈpleɪsəbl/`",
+          "adj.",
+          "不可替代的；独一无二的",
+          "`play an irreplaceable role` 发挥不可替代的作用",
+          "注意拼写：**保留 `e`**（不能写成 `irreplacable`），大作文评价文化/教师价值满分用词。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 73,
+        "raw_row": "| 5 | **irreplaceable** | `/ˌɪrɪˈpleɪsəbl/` | adj. | 不可替代的；独一无二的 | `play an irreplaceable role` 发挥不可替代的作用 | 注意拼写：**保留 `e`**（不能写成 `irreplacable`），大作文评价文化/教师价值满分用词。 |",
+        "row_sha256": "85ce18031ca7fd0c8bdd80ab374d989de7505d3a26bf43bdcf21059df6a338c4"
+      },
+      "source_number": 5,
+      "source_tip": "注意拼写：保留 e（不能写成 irreplacable），大作文评价文化/教师价值满分用词。",
+      "source_usage": "play an irreplaceable role 发挥不可替代的作用"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "invariably",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "invariably"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-006",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "总是；毫无例外地；一贯地",
+      "ordinary_meaning": null,
+      "part_of_speech": "adv.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ɪnˈveəriəbli/"
+      ],
+      "source": {
+        "cells": [
+          "6",
+          "**invariably**",
+          "`/ɪnˈveəriəbli/`",
+          "adv.",
+          "总是；毫无例外地；一贯地",
+          "`invariably lead to` 总是导致…",
+          "由 `vary` $\\rightarrow$ `variable` $\\rightarrow$ `invariable` $\\rightarrow$ `invariably` 三级派生，十一选十副词槽位常客。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 74,
+        "raw_row": "| 6 | **invariably** | `/ɪnˈveəriəbli/` | adv. | 总是；毫无例外地；一贯地 | `invariably lead to` 总是导致… | 由 `vary` $\\rightarrow$ `variable` $\\rightarrow$ `invariable` $\\rightarrow$ `invariably` 三级派生，十一选十副词槽位常客。 |",
+        "row_sha256": "dc32a3c7bfc1bf64772bc276ffef53404e1fe0ce2a261137ab198c8fde735fee"
+      },
+      "source_number": 6,
+      "source_tip": "由 vary $\\rightarrow$ variable $\\rightarrow$ invariable $\\rightarrow$ invariably 三级派生，十一选十副词槽位常客。",
+      "source_usage": "invariably lead to 总是导致…"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "unjustified",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "unjustified"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-007",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "无正当理由的；不合理的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ʌnˈdʒʌstɪfaɪd/"
+      ],
+      "source": {
+        "cells": [
+          "7",
+          "**unjustified**",
+          "`/ʌnˈdʒʌstɪfaɪd/`",
+          "adj.",
+          "无正当理由的；不合理的",
+          "`unjustified criticism / fear` 无端的指责/恐惧",
+          "由 `justify`（证明…正当）派生，完形与十一选十高频态度评价词。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 75,
+        "raw_row": "| 7 | **unjustified** | `/ʌnˈdʒʌstɪfaɪd/` | adj. | 无正当理由的；不合理的 | `unjustified criticism / fear` 无端的指责/恐惧 | 由 `justify`（证明…正当）派生，完形与十一选十高频态度评价词。 |",
+        "row_sha256": "2f57f1e4b0818921dd06484e5adba1729443d214c48600655407af1b1f72b887"
+      },
+      "source_number": 7,
+      "source_tip": "由 justify（证明…正当）派生，完形与十一选十高频态度评价词。",
+      "source_usage": "unjustified criticism / fear 无端的指责/恐惧"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "accommodate",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "accommodate"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-008",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "容纳；为…提供住宿；顺应/迁就",
+      "ordinary_meaning": null,
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈkɒmədeɪt/"
+      ],
+      "source": {
+        "cells": [
+          "8",
+          "**accommodate**",
+          "`/əˈkɒmədeɪt/`",
+          "v.",
+          "容纳；为…提供住宿；顺应/迁就",
+          "`accommodate to new circumstances` 适应新环境",
+          "**高危拼写词**：注意是**双 c 双 m**（`cc` + `mm`），漏写一个字母即判全错。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 76,
+        "raw_row": "| 8 | **accommodate** | `/əˈkɒmədeɪt/` | v. | 容纳；为…提供住宿；顺应/迁就 | `accommodate to new circumstances` 适应新环境 | **高危拼写词**：注意是**双 c 双 m**（`cc` + `mm`），漏写一个字母即判全错。 |",
+        "row_sha256": "2f49f489a19ac26fbb41268262855660771ed59d1983aecc1e9a7a38b8b92f0a"
+      },
+      "source_number": 8,
+      "source_tip": "高危拼写词：注意是双 c 双 m（cc + mm），漏写一个字母即判全错。",
+      "source_usage": "accommodate to new circumstances 适应新环境"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "embarrass",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "embarrass"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-009",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "使尴尬；使窘迫；使为难",
+      "ordinary_meaning": null,
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ɪmˈbærəs/"
+      ],
+      "source": {
+        "cells": [
+          "9",
+          "**embarrass**",
+          "`/ɪmˈbærəs/`",
+          "v.",
+          "使尴尬；使窘迫；使为难",
+          "`to one's embarrassment` 令某人尴尬的是",
+          "**高危拼写词**：注意是**双 r 双 s**（`rr` + `ss`）。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 77,
+        "raw_row": "| 9 | **embarrass** | `/ɪmˈbærəs/` | v. | 使尴尬；使窘迫；使为难 | `to one's embarrassment` 令某人尴尬的是 | **高危拼写词**：注意是**双 r 双 s**（`rr` + `ss`）。 |",
+        "row_sha256": "1d9dadc9ed579a2bf688645df86d44fb92643ad1db45aab7d8e9f11be064875c"
+      },
+      "source_number": 9,
+      "source_tip": "高危拼写词：注意是双 r 双 s（rr + ss）。",
+      "source_usage": "to one's embarrassment 令某人尴尬的是"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "occurrence",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "occurrence"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-010",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "发生的事情；出现；存在",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈkʌrəns/"
+      ],
+      "source": {
+        "cells": [
+          "10",
+          "**occurrence**",
+          "`/əˈkʌrəns/`",
+          "n.",
+          "发生的事情；出现；存在",
+          "`an everyday occurrence` 司空见惯的事",
+          "由 `occur` 派生，注意**双 c 双 r** 且后缀为 `-ence`（非 `-ance`）。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 78,
+        "raw_row": "| 10 | **occurrence** | `/əˈkʌrəns/` | n. | 发生的事情；出现；存在 | `an everyday occurrence` 司空见惯的事 | 由 `occur` 派生，注意**双 c 双 r** 且后缀为 `-ence`（非 `-ance`）。 |",
+        "row_sha256": "1f10d1ddec0608db7078153228fe95024a73043d451cfaaf47d7fc88d687e726"
+      },
+      "source_number": 10,
+      "source_tip": "由 occur 派生，注意双 c 双 r 且后缀为 -ence（非 -ance）。",
+      "source_usage": "an everyday occurrence 司空见惯的事"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "conscientious",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "conscientious"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-011",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "认真尽责的；一丝不苟的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌkɒnʃiˈenʃəs/"
+      ],
+      "source": {
+        "cells": [
+          "11",
+          "**conscientious**",
+          "`/ˌkɒnʃiˈenʃəs/`",
+          "adj.",
+          "认真尽责的；一丝不苟的",
+          "`a conscientious student / worker` 尽责的学生",
+          "极易与 `conscious`（有意识的 `/ˈkɒnʃəs/`）混淆，完形填空人物品质描写高频词。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 79,
+        "raw_row": "| 11 | **conscientious** | `/ˌkɒnʃiˈenʃəs/` | adj. | 认真尽责的；一丝不苟的 | `a conscientious student / worker` 尽责的学生 | 极易与 `conscious`（有意识的 `/ˈkɒnʃəs/`）混淆，完形填空人物品质描写高频词。 |",
+        "row_sha256": "1da3471ff138c6807bfb961927b8ea1a6f572d9290ca14c8e45a1dce16be2f0e"
+      },
+      "source_number": 11,
+      "source_tip": "极易与 conscious（有意识的 /ˈkɒnʃəs/）混淆，完形填空人物品质描写高频词。",
+      "source_usage": "a conscientious student / worker 尽责的学生"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "indispensable",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "indispensable"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-012",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "不可或缺的；绝对必要的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌɪndɪˈspensəbl/"
+      ],
+      "source": {
+        "cells": [
+          "12",
+          "**indispensable**",
+          "`/ˌɪndɪˈspensəbl/`",
+          "adj.",
+          "不可或缺的；绝对必要的",
+          "`be indispensable to / for...` 对…不可或缺",
+          "注意后缀是 **`-able`** 而非 `-ible`，替换 `very important` 的首选词。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 80,
+        "raw_row": "| 12 | **indispensable** | `/ˌɪndɪˈspensəbl/` | adj. | 不可或缺的；绝对必要的 | `be indispensable to / for...` 对…不可或缺 | 注意后缀是 **`-able`** 而非 `-ible`，替换 `very important` 的首选词。 |",
+        "row_sha256": "35f2520b0224582d45d0a270ea5f01067bc55d0a4ad4adef300011bc8c044444"
+      },
+      "source_number": 12,
+      "source_tip": "注意后缀是 -able 而非 -ible，替换 very important 的首选词。",
+      "source_usage": "be indispensable to / for... 对…不可或缺"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "privilege",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "privilege"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-013",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "特权；荣幸；给予特权",
+      "ordinary_meaning": null,
+      "part_of_speech": "n./v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈprɪvəlɪdʒ/"
+      ],
+      "source": {
+        "cells": [
+          "13",
+          "**privilege**",
+          "`/ˈprɪvəlɪdʒ/`",
+          "n./v.",
+          "特权；荣幸；给予特权",
+          "`it is a privilege to do...`；`privileged` 有特权的",
+          "**高危拼写**：中间是 `v-i-l-e-g-e`，切勿受发音影响多加字母 `d` 写成 `priviledge`。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 81,
+        "raw_row": "| 13 | **privilege** | `/ˈprɪvəlɪdʒ/` | n./v. | 特权；荣幸；给予特权 | `it is a privilege to do...`；`privileged` 有特权的 | **高危拼写**：中间是 `v-i-l-e-g-e`，切勿受发音影响多加字母 `d` 写成 `priviledge`。 |",
+        "row_sha256": "72675707bcc2eb8faa572bc64a2fb939afdcac9f58598f9f7ffa35ee496d18ce"
+      },
+      "source_number": 13,
+      "source_tip": "高危拼写：中间是 v-i-l-e-g-e，切勿受发音影响多加字母 d 写成 priviledge。",
+      "source_usage": "it is a privilege to do...；privileged 有特权的"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "perseverance",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "perseverance"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-014",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "毅力；韧性；不屈不挠",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌpɜːsɪˈvɪərəns/"
+      ],
+      "source": {
+        "cells": [
+          "14",
+          "**perseverance**",
+          "`/ˌpɜːsɪˈvɪərəns/`",
+          "n.",
+          "毅力；韧性；不屈不挠",
+          "`show great perseverance`；v. `persevere (in)`",
+          "记叙文（阅读 A 篇）与作文核心品质词，注意后缀为 `-ance`。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 82,
+        "raw_row": "| 14 | **perseverance** | `/ˌpɜːsɪˈvɪərəns/` | n. | 毅力；韧性；不屈不挠 | `show great perseverance`；v. `persevere (in)` | 记叙文（阅读 A 篇）与作文核心品质词，注意后缀为 `-ance`。 |",
+        "row_sha256": "be9acb854747b447e400ed4a11f7c48fdbc1f091687d573cd8eedbc7b50ed497"
+      },
+      "source_number": 14,
+      "source_tip": "记叙文（阅读 A 篇）与作文核心品质词，注意后缀为 -ance。",
+      "source_usage": "show great perseverance；v. persevere (in)"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "simultaneously",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "simultaneously"
+      ],
+      "group": "L1_L4",
+      "id": "VOCAB-015",
+      "kind": "word",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "同时地；同步地",
+      "ordinary_meaning": null,
+      "part_of_speech": "adv.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌsɪmlˈteɪniəsli/"
+      ],
+      "source": {
+        "cells": [
+          "15",
+          "**simultaneously**",
+          "`/ˌsɪmlˈteɪniəsli/`",
+          "adv.",
+          "同时地；同步地",
+          "`occur simultaneously` 同时发生",
+          "听力、概要写作与完形高频词，替换 `at the same time`。"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 83,
+        "raw_row": "| 15 | **simultaneously** | `/ˌsɪmlˈteɪniəsli/` | adv. | 同时地；同步地 | `occur simultaneously` 同时发生 | 听力、概要写作与完形高频词，替换 `at the same time`。 |",
+        "row_sha256": "85fc15ab7ebba910b521c530fa83f50eceb165e46f0bc5cd25590786f284161f"
+      },
+      "source_number": 15,
+      "source_tip": "听力、概要写作与完形高频词，替换 at the same time。",
+      "source_usage": "occur simultaneously 同时发生"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "address",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "address"
+      ],
+      "group": "L3",
+      "id": "VOCAB-016",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 着手解决；处理；应对；向…发表演说",
+      "ordinary_meaning": "n. 地址",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈdres/"
+      ],
+      "source": {
+        "cells": [
+          "16",
+          "**address**",
+          "`/əˈdres/`",
+          "n. 地址",
+          "**v. 着手解决；处理；应对；向…发表演说**",
+          "`address the underlying problem` 解决根本问题",
+          "阅读B/C、概要、完形"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 93,
+        "raw_row": "| 16 | **address** | `/əˈdres/` | n. 地址 | **v. 着手解决；处理；应对；向…发表演说** | `address the underlying problem` 解决根本问题 | 阅读B/C、概要、完形 |",
+        "row_sha256": "82b1485b6d280944f1241ae30608881f1181d653d7e674d4ea615d5efa282de6"
+      },
+      "source_number": 16,
+      "source_tip": "阅读B/C、概要、完形",
+      "source_usage": "address the underlying problem 解决根本问题"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "harbor",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "harbor"
+      ],
+      "group": "L3",
+      "id": "VOCAB-017",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 心怀（怨恨/疑虑/想法）；庇护，窝藏",
+      "ordinary_meaning": "n. 港口",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈhɑːbə(r)/"
+      ],
+      "source": {
+        "cells": [
+          "17",
+          "**harbor**",
+          "`/ˈhɑːbə(r)/`",
+          "n. 港口",
+          "**v. 心怀（怨恨/疑虑/想法）；庇护，窝藏**",
+          "`harbor deep doubts about...` 对…心怀深切疑虑",
+          "阅读C篇、完形填空"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 94,
+        "raw_row": "| 17 | **harbor** | `/ˈhɑːbə(r)/` | n. 港口 | **v. 心怀（怨恨/疑虑/想法）；庇护，窝藏** | `harbor deep doubts about...` 对…心怀深切疑虑 | 阅读C篇、完形填空 |",
+        "row_sha256": "f3d4bbc81a031ff6503b88ef0828e587b873810b3e6da931690297aa6aca63bc"
+      },
+      "source_number": 17,
+      "source_tip": "阅读C篇、完形填空",
+      "source_usage": "harbor deep doubts about... 对…心怀深切疑虑"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "compromise",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "compromise"
+      ],
+      "group": "L3",
+      "id": "VOCAB-018",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 危及；损害；使陷入危险",
+      "ordinary_meaning": "n./v. 妥协，折中",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈkɒmprəmaɪz/"
+      ],
+      "source": {
+        "cells": [
+          "18",
+          "**compromise**",
+          "`/ˈkɒmprəmaɪz/`",
+          "n./v. 妥协，折中",
+          "**v. 危及；损害；使陷入危险**",
+          "`compromise cognitive health / safety` 损害认知健康/危及安全",
+          "阅读B/C、十一选十"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 95,
+        "raw_row": "| 18 | **compromise** | `/ˈkɒmprəmaɪz/` | n./v. 妥协，折中 | **v. 危及；损害；使陷入危险** | `compromise cognitive health / safety` 损害认知健康/危及安全 | 阅读B/C、十一选十 |",
+        "row_sha256": "eabee2c7ab9616a5b471458c02526f20b7fd7cca68fb47ba9fe4296e4693c1b1"
+      },
+      "source_number": 18,
+      "source_tip": "阅读B/C、十一选十",
+      "source_usage": "compromise cognitive health / safety 损害认知健康/危及安全"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "novel",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "novel"
+      ],
+      "group": "L3",
+      "id": "VOCAB-019",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 新颖的；新奇的；前所未有的",
+      "ordinary_meaning": "n. （长篇）小说",
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈnɒvl/"
+      ],
+      "source": {
+        "cells": [
+          "19",
+          "**novel**",
+          "`/ˈnɒvl/`",
+          "n. （长篇）小说",
+          "**adj. 新颖的；新奇的；前所未有的**",
+          "`a novel approach to battery recycling` 一种新颖的电池回收方法",
+          "阅读B/C（科技文必考）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 96,
+        "raw_row": "| 19 | **novel** | `/ˈnɒvl/` | n. （长篇）小说 | **adj. 新颖的；新奇的；前所未有的** | `a novel approach to battery recycling` 一种新颖的电池回收方法 | 阅读B/C（科技文必考） |",
+        "row_sha256": "901afe59293bbe221cba3048492f32252119451957a84ba939d9a9f7acbd3cdf"
+      },
+      "source_number": 19,
+      "source_tip": "阅读B/C（科技文必考）",
+      "source_usage": "a novel approach to battery recycling 一种新颖的电池回收方法"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "subject",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "subject"
+      ],
+      "group": "L3",
+      "id": "VOCAB-020",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 易遭受…的 (be subject to)；n. 实验受试者；v. 使经历",
+      "ordinary_meaning": "n. 科目；主题",
+      "part_of_speech": "adj./n./v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈsʌbdʒɪkt/",
+        "/səbˈdʒekt/"
+      ],
+      "source": {
+        "cells": [
+          "20",
+          "**subject**",
+          "`/ˈsʌbdʒɪkt/`<br>`/səbˈdʒekt/`",
+          "n. 科目；主题",
+          "**adj. 易遭受…的 (`be subject to`)；n. 实验受试者；v. 使经历**",
+          "`The schedule is subject to change`；`200 healthy subjects` 200名受试者",
+          "阅读B/C（实验报告必考）、中译英"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 97,
+        "raw_row": "| 20 | **subject** | `/ˈsʌbdʒɪkt/`<br>`/səbˈdʒekt/` | n. 科目；主题 | **adj. 易遭受…的 (`be subject to`)；n. 实验受试者；v. 使经历** | `The schedule is subject to change`；`200 healthy subjects` 200名受试者 | 阅读B/C（实验报告必考）、中译英 |",
+        "row_sha256": "14b01e6f975a3c34e316bb3c4716b0cad5f6160d6debc1609db810c16763cd3d"
+      },
+      "source_number": 20,
+      "source_tip": "阅读B/C（实验报告必考）、中译英",
+      "source_usage": "The schedule is subject to change；200 healthy subjects 200名受试者"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "faculty",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "faculty"
+      ],
+      "group": "L3",
+      "id": "VOCAB-021",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "n. （人体的）官能，感官；心智能力，天赋",
+      "ordinary_meaning": "n. 全体教员；院系",
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈfæklti/"
+      ],
+      "source": {
+        "cells": [
+          "21",
+          "**faculty**",
+          "`/ˈfæklti/`",
+          "n. 全体教员；院系",
+          "**n. （人体的）官能，感官；心智能力，天赋**",
+          "`critical faculties / mental faculties` 批判性心智能力",
+          "阅读C篇、十一选十"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 98,
+        "raw_row": "| 21 | **faculty** | `/ˈfæklti/` | n. 全体教员；院系 | **n. （人体的）官能，感官；心智能力，天赋** | `critical faculties / mental faculties` 批判性心智能力 | 阅读C篇、十一选十 |",
+        "row_sha256": "9abe3bf344d608eb2a91bda74fd5efd0ef5fb5ef18807d9c081463dc8c837849"
+      },
+      "source_number": 21,
+      "source_tip": "阅读C篇、十一选十",
+      "source_usage": "critical faculties / mental faculties 批判性心智能力"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "pronounced",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "pronounced"
+      ],
+      "group": "L3",
+      "id": "VOCAB-022",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 显著的；明显的；明确的",
+      "ordinary_meaning": "v. 发音（过去式）",
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/prəˈnaʊnst/"
+      ],
+      "source": {
+        "cells": [
+          "22",
+          "**pronounced**",
+          "`/prəˈnaʊnst/`",
+          "v. 发音（过去式）",
+          "**adj. 显著的；明显的；明确的**",
+          "`a pronounced shift in public attitude` 公众态度的显著转变",
+          "阅读B/C、完形填空"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 99,
+        "raw_row": "| 22 | **pronounced** | `/prəˈnaʊnst/` | v. 发音（过去式） | **adj. 显著的；明显的；明确的** | `a pronounced shift in public attitude` 公众态度的显著转变 | 阅读B/C、完形填空 |",
+        "row_sha256": "944f82960e8ce6f1d24e8752e873541c71207ed989b8a8e1fa4e9c6cf2654ec3"
+      },
+      "source_number": 22,
+      "source_tip": "阅读B/C、完形填空",
+      "source_usage": "a pronounced shift in public attitude 公众态度的显著转变"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "promise",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "promise"
+      ],
+      "group": "L3",
+      "id": "VOCAB-023",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 预示着；有望带来；n. 获得成功的迹象",
+      "ordinary_meaning": "n./v. 承诺，答应",
+      "part_of_speech": "v./n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈprɒmɪs/"
+      ],
+      "source": {
+        "cells": [
+          "23",
+          "**promise**",
+          "`/ˈprɒmɪs/`",
+          "n./v. 承诺，答应",
+          "**v. 预示着；有望带来；n. 获得成功的迹象**",
+          "`The new therapy promises a cure` 新疗法有望带来治愈希望；`show great promise`",
+          "阅读B/C、完形填空"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 100,
+        "raw_row": "| 23 | **promise** | `/ˈprɒmɪs/` | n./v. 承诺，答应 | **v. 预示着；有望带来；n. 获得成功的迹象** | `The new therapy promises a cure` 新疗法有望带来治愈希望；`show great promise` | 阅读B/C、完形填空 |",
+        "row_sha256": "7049ffe96e662d7f79e6c2cd2ad12a84f5a61661ab482584c52bf828845eefaa"
+      },
+      "source_number": 23,
+      "source_tip": "阅读B/C、完形填空",
+      "source_usage": "The new therapy promises a cure 新疗法有望带来治愈希望；show great promise"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "weather",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "weather"
+      ],
+      "group": "L3",
+      "id": "VOCAB-024",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 经受住，平安度过（危机/风暴/困难）",
+      "ordinary_meaning": "n. 天气",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈweðə(r)/"
+      ],
+      "source": {
+        "cells": [
+          "24",
+          "**weather**",
+          "`/ˈweðə(r)/`",
+          "n. 天气",
+          "**v. 经受住，平安度过（危机/风暴/困难）**",
+          "`weather the economic storm / crisis` 经受住经济危机",
+          "完形填空、阅读A/C篇"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 101,
+        "raw_row": "| 24 | **weather** | `/ˈweðə(r)/` | n. 天气 | **v. 经受住，平安度过（危机/风暴/困难）** | `weather the economic storm / crisis` 经受住经济危机 | 完形填空、阅读A/C篇 |",
+        "row_sha256": "9b000a50d2ff01a79d439ea2e02b3446070db6b22fe694c1651102392a15bd19"
+      },
+      "source_number": 24,
+      "source_tip": "完形填空、阅读A/C篇",
+      "source_usage": "weather the economic storm / crisis 经受住经济危机"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "fuel",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "fuel"
+      ],
+      "group": "L3",
+      "id": "VOCAB-025",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 刺激；加剧；推动（情绪/趋势增长）",
+      "ordinary_meaning": "n. 燃料",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈfjuːəl/"
+      ],
+      "source": {
+        "cells": [
+          "25",
+          "**fuel**",
+          "`/ˈfjuːəl/`",
+          "n. 燃料",
+          "**v. 刺激；加剧；推动（情绪/趋势增长）**",
+          "`fuel anxiety among adolescents` 加剧青少年群体中的焦虑",
+          "概要写作、阅读B/C"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 102,
+        "raw_row": "| 25 | **fuel** | `/ˈfjuːəl/` | n. 燃料 | **v. 刺激；加剧；推动（情绪/趋势增长）** | `fuel anxiety among adolescents` 加剧青少年群体中的焦虑 | 概要写作、阅读B/C |",
+        "row_sha256": "e207c92ec729940691020d8b2256d9d08cc0cfb88a5d52cb5e9b95534efb9b10"
+      },
+      "source_number": 25,
+      "source_tip": "概要写作、阅读B/C",
+      "source_usage": "fuel anxiety among adolescents 加剧青少年群体中的焦虑"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "tailor",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "tailor"
+      ],
+      "group": "L3",
+      "id": "VOCAB-026",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 专门定制；使适应特定需求 (tailor...to...)",
+      "ordinary_meaning": "n. 裁缝",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈteɪlə(r)/"
+      ],
+      "source": {
+        "cells": [
+          "26",
+          "**tailor**",
+          "`/ˈteɪlə(r)/`",
+          "n. 裁缝",
+          "**v. 专门定制；使适应特定需求 (`tailor...to...`)**",
+          "`tailor teaching methods to individual needs` 因材施教",
+          "十一选十、大作文、概要"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 103,
+        "raw_row": "| 26 | **tailor** | `/ˈteɪlə(r)/` | n. 裁缝 | **v. 专门定制；使适应特定需求 (`tailor...to...`)** | `tailor teaching methods to individual needs` 因材施教 | 十一选十、大作文、概要 |",
+        "row_sha256": "f8f34452135c85bb0b08787287545aa642d5ac5f44625dbd02b7ca1565ffbcf0"
+      },
+      "source_number": 26,
+      "source_tip": "十一选十、大作文、概要",
+      "source_usage": "tailor teaching methods to individual needs 因材施教"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "subscribe",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "subscribe"
+      ],
+      "group": "L3",
+      "id": "VOCAB-027",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 赞同，认可（观点/理论）(subscribe to)",
+      "ordinary_meaning": "v. 订阅（报刊）",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/səbˈskraɪb/"
+      ],
+      "source": {
+        "cells": [
+          "27",
+          "**subscribe**",
+          "`/səbˈskraɪb/`",
+          "v. 订阅（报刊）",
+          "**v. 赞同，认可（观点/理论）(`subscribe to`)**",
+          "`subscribe to the view that...` 赞同…的观点",
+          "阅读C篇观点态度题"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 104,
+        "raw_row": "| 27 | **subscribe** | `/səbˈskraɪb/` | v. 订阅（报刊） | **v. 赞同，认可（观点/理论）(`subscribe to`)** | `subscribe to the view that...` 赞同…的观点 | 阅读C篇观点态度题 |",
+        "row_sha256": "f6f1ade2eddf2b05543e657a2fb4c5c212eeb070e446fa36a21f2b13e9f3c1bf"
+      },
+      "source_number": 27,
+      "source_tip": "阅读C篇观点态度题",
+      "source_usage": "subscribe to the view that... 赞同…的观点"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "dismiss",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "dismiss"
+      ],
+      "group": "L3",
+      "id": "VOCAB-028",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 对…不予理会；摒弃（想法）；认为…不值得考虑",
+      "ordinary_meaning": "v. 解散；解雇",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/dɪsˈmɪs/"
+      ],
+      "source": {
+        "cells": [
+          "28",
+          "**dismiss**",
+          "`/dɪsˈmɪs/`",
+          "v. 解散；解雇",
+          "**v. 对…不予理会；摒弃（想法）；认为…不值得考虑**",
+          "`dismiss the warning as exaggerated` 认为警告夸大其词而不予理会",
+          "阅读C篇、完形填空"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 105,
+        "raw_row": "| 28 | **dismiss** | `/dɪsˈmɪs/` | v. 解散；解雇 | **v. 对…不予理会；摒弃（想法）；认为…不值得考虑** | `dismiss the warning as exaggerated` 认为警告夸大其词而不予理会 | 阅读C篇、完形填空 |",
+        "row_sha256": "d6e22b8163fdafbd7938461ad0d7cebfe57584de0e2b65a0901c87c720ad8839"
+      },
+      "source_number": 28,
+      "source_tip": "阅读C篇、完形填空",
+      "source_usage": "dismiss the warning as exaggerated 认为警告夸大其词而不予理会"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "tap",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "tap"
+      ],
+      "group": "L3",
+      "id": "VOCAB-029",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 开发，发掘，利用（潜力/资源/市场）",
+      "ordinary_meaning": "n. 水龙头；v. 轻拍",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/tæp/"
+      ],
+      "source": {
+        "cells": [
+          "29",
+          "**tap**",
+          "`/tæp/`",
+          "n. 水龙头；v. 轻拍",
+          "**v. 开发，发掘，利用（潜力/资源/市场）**",
+          "`tap into one's full potential` 发掘某人的全部潜能",
+          "十一选十、中译英、作文"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 106,
+        "raw_row": "| 29 | **tap** | `/tæp/` | n. 水龙头；v. 轻拍 | **v. 开发，发掘，利用（潜力/资源/市场）** | `tap into one's full potential` 发掘某人的全部潜能 | 十一选十、中译英、作文 |",
+        "row_sha256": "820d50a572be23a7d014262ffecfdeb788f79e9f6a2831413b56d28d57668e24"
+      },
+      "source_number": 29,
+      "source_tip": "十一选十、中译英、作文",
+      "source_usage": "tap into one's full potential 发掘某人的全部潜能"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "sound",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "sound"
+      ],
+      "group": "L3",
+      "id": "VOCAB-030",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 明智的；合理的；可靠的；酣畅的",
+      "ordinary_meaning": "n. 声音；v. 听起来",
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/saʊnd/"
+      ],
+      "source": {
+        "cells": [
+          "30",
+          "**sound**",
+          "`/saʊnd/`",
+          "n. 声音；v. 听起来",
+          "**adj. 明智的；合理的；可靠的；酣畅的**",
+          "`make a sound judgment` 做出明智判断；`sound sleep` 酣睡",
+          "完形填空、中译英"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 107,
+        "raw_row": "| 30 | **sound** | `/saʊnd/` | n. 声音；v. 听起来 | **adj. 明智的；合理的；可靠的；酣畅的** | `make a sound judgment` 做出明智判断；`sound sleep` 酣睡 | 完形填空、中译英 |",
+        "row_sha256": "ea181509a31af41f6b6628591a95c042ca42c43951267fcd29386b3171458504"
+      },
+      "source_number": 30,
+      "source_tip": "完形填空、中译英",
+      "source_usage": "make a sound judgment 做出明智判断；sound sleep 酣睡"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "arrest",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "arrest"
+      ],
+      "group": "L3",
+      "id": "VOCAB-031",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 阻止，抑制（衰退/发展）；吸引（注意力）",
+      "ordinary_meaning": "v./n. 逮捕",
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈrest/"
+      ],
+      "source": {
+        "cells": [
+          "31",
+          "**arrest**",
+          "`/əˈrest/`",
+          "v./n. 逮捕",
+          "**v. 阻止，抑制（衰退/发展）；吸引（注意力）**",
+          "`arrest the decline of biodiversity` 遏制生物多样性衰退",
+          "阅读B/C篇"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 108,
+        "raw_row": "| 31 | **arrest** | `/əˈrest/` | v./n. 逮捕 | **v. 阻止，抑制（衰退/发展）；吸引（注意力）** | `arrest the decline of biodiversity` 遏制生物多样性衰退 | 阅读B/C篇 |",
+        "row_sha256": "4217621fc22db64a4146a80146673b57ed87f78272e337c3ed284dbeee738f2f"
+      },
+      "source_number": 31,
+      "source_tip": "阅读B/C篇",
+      "source_usage": "arrest the decline of biodiversity 遏制生物多样性衰退"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "check",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "check"
+      ],
+      "group": "L3",
+      "id": "VOCAB-032",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v./n. 抑制，遏制，控制 (keep...in check)",
+      "ordinary_meaning": "v./n. 检查；支票",
+      "part_of_speech": "v./n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/tʃek/"
+      ],
+      "source": {
+        "cells": [
+          "32",
+          "**check**",
+          "`/tʃek/`",
+          "v./n. 检查；支票",
+          "**v./n. 抑制，遏制，控制 (`keep...in check`)**",
+          "`hold/keep inflation in check` 控制住通货膨胀",
+          "完形填空、阅读C篇"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 109,
+        "raw_row": "| 32 | **check** | `/tʃek/` | v./n. 检查；支票 | **v./n. 抑制，遏制，控制 (`keep...in check`)** | `hold/keep inflation in check` 控制住通货膨胀 | 完形填空、阅读C篇 |",
+        "row_sha256": "5af6e878da457e781056347dad66a78b407d74e8e6f8724c38c9788c2d4cd161"
+      },
+      "source_number": 32,
+      "source_tip": "完形填空、阅读C篇",
+      "source_usage": "hold/keep inflation in check 控制住通货膨胀"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "credit",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "credit"
+      ],
+      "group": "L3",
+      "id": "VOCAB-033",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 把…归功于 (credit A to B)；n. 赞扬，功劳",
+      "ordinary_meaning": "n. 信用；学分",
+      "part_of_speech": "v./n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈkredɪt/"
+      ],
+      "source": {
+        "cells": [
+          "33",
+          "**credit**",
+          "`/ˈkredɪt/`",
+          "n. 信用；学分",
+          "**v. 把…归功于 (`credit A to B`)；n. 赞扬，功劳**",
+          "`do credit to...` 为…争光；`be credited with...` 被认为有…之功",
+          "十一选十、中译英"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 110,
+        "raw_row": "| 33 | **credit** | `/ˈkredɪt/` | n. 信用；学分 | **v. 把…归功于 (`credit A to B`)；n. 赞扬，功劳** | `do credit to...` 为…争光；`be credited with...` 被认为有…之功 | 十一选十、中译英 |",
+        "row_sha256": "bc18f042de023ec4e9531bf8ee1e41c5eba446b050b2210f6abcc87bc9aefd6d"
+      },
+      "source_number": 33,
+      "source_tip": "十一选十、中译英",
+      "source_usage": "do credit to... 为…争光；be credited with... 被认为有…之功"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "allowance",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "allowance"
+      ],
+      "group": "L3",
+      "id": "VOCAB-034",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "n. 体谅，考虑到 (make allowance(s) for)",
+      "ordinary_meaning": "n. 零花钱；津贴",
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈlaʊəns/"
+      ],
+      "source": {
+        "cells": [
+          "34",
+          "**allowance**",
+          "`/əˈlaʊəns/`",
+          "n. 零花钱；津贴",
+          "**n. 体谅，考虑到 (`make allowance(s) for`)**",
+          "`make allowances for his lack of experience` 体谅他缺乏经验",
+          "完形填空、中译英"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 111,
+        "raw_row": "| 34 | **allowance** | `/əˈlaʊəns/` | n. 零花钱；津贴 | **n. 体谅，考虑到 (`make allowance(s) for`)** | `make allowances for his lack of experience` 体谅他缺乏经验 | 完形填空、中译英 |",
+        "row_sha256": "385315aada9f53e98cc04b86d2869679d77eaa67cf865243f61ee8a606a604b0"
+      },
+      "source_number": 34,
+      "source_tip": "完形填空、中译英",
+      "source_usage": "make allowances for his lack of experience 体谅他缺乏经验"
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "informed",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "informed"
+      ],
+      "group": "L3",
+      "id": "VOCAB-035",
+      "kind": "word",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 见多识广的；有充分依据的；明智的",
+      "ordinary_meaning": "v. 通知（过去式）",
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ɪnˈfɔːmd/"
+      ],
+      "source": {
+        "cells": [
+          "35",
+          "**informed**",
+          "`/ɪnˈfɔːmd/`",
+          "v. 通知（过去式）",
+          "**adj. 见多识广的；有充分依据的；明智的**",
+          "`make an informed decision / choice` 做出明智/知情的决定",
+          "阅读B/C、大作文高频词"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 112,
+        "raw_row": "| 35 | **informed** | `/ɪnˈfɔːmd/` | v. 通知（过去式） | **adj. 见多识广的；有充分依据的；明智的** | `make an informed decision / choice` 做出明智/知情的决定 | 阅读B/C、大作文高频词 |",
+        "row_sha256": "34d6d03cfd05c19974707514746ba06f3c5c74163616d5364b5e0c1b1861ffe1"
+      },
+      "source_number": 35,
+      "source_tip": "阅读B/C、大作文高频词",
+      "source_usage": "make an informed decision / choice 做出明智/知情的决定"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "ambiguous",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "ambiguous"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-036",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "模棱两可的；含糊不清的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/æmˈbɪɡjuəs/"
+      ],
+      "source": {
+        "cells": [
+          "36",
+          "**ambiguous**",
+          "`/æmˈbɪɡjuəs/`",
+          "adj.",
+          "模棱两可的；含糊不清的",
+          "`an ambiguous attitude / wording`；n. `ambiguity`（阅读态度题核心词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 122,
+        "raw_row": "| 36 | **ambiguous** | `/æmˈbɪɡjuəs/` | adj. | 模棱两可的；含糊不清的 | `an ambiguous attitude / wording`；n. `ambiguity`（阅读态度题核心词） |",
+        "row_sha256": "3eac313d28156025d686a7bdee0591510bc427f562a485bb1195644b6ade8120"
+      },
+      "source_number": 36,
+      "source_tip": null,
+      "source_usage": "an ambiguous attitude / wording；n. ambiguity（阅读态度题核心词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "skeptical",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "skeptical"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-037",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "持怀疑态度的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈskeptɪkl/"
+      ],
+      "source": {
+        "cells": [
+          "37",
+          "**skeptical**",
+          "`/ˈskeptɪkl/`",
+          "adj.",
+          "持怀疑态度的",
+          "`remain skeptical about/of...`（阅读观点题高频选项词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 123,
+        "raw_row": "| 37 | **skeptical** | `/ˈskeptɪkl/` | adj. | 持怀疑态度的 | `remain skeptical about/of...`（阅读观点题高频选项词） |",
+        "row_sha256": "3f173910d1371fc1688976c36b650f498f75c551cba407f78b2920c3a51bf705"
+      },
+      "source_number": 37,
+      "source_tip": null,
+      "source_usage": "remain skeptical about/of...（阅读观点题高频选项词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "paradox",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "paradox"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-038",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "悖论；自相矛盾的现象",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈpærədɒks/"
+      ],
+      "source": {
+        "cells": [
+          "38",
+          "**paradox**",
+          "`/ˈpærədɒks/`",
+          "n.",
+          "悖论；自相矛盾的现象",
+          "`a striking paradox`；adj. `paradoxical`（外刊引入段最爱用的核心概念词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 124,
+        "raw_row": "| 38 | **paradox** | `/ˈpærədɒks/` | n. | 悖论；自相矛盾的现象 | `a striking paradox`；adj. `paradoxical`（外刊引入段最爱用的核心概念词） |",
+        "row_sha256": "061355d0140b92a2e8009d9d200c1b7950d30f709beaf971d1e3b920a0fd9779"
+      },
+      "source_number": 38,
+      "source_tip": null,
+      "source_usage": "a striking paradox；adj. paradoxical（外刊引入段最爱用的核心概念词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "dilemma",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "dilemma"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-039",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "进退两难的困境",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/dɪˈlemə/"
+      ],
+      "source": {
+        "cells": [
+          "39",
+          "**dilemma**",
+          "`/dɪˈlemə/`",
+          "n.",
+          "进退两难的困境",
+          "`face a moral / ethical dilemma` 面临道德两难困境"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 125,
+        "raw_row": "| 39 | **dilemma** | `/dɪˈlemə/` | n. | 进退两难的困境 | `face a moral / ethical dilemma` 面临道德两难困境 |",
+        "row_sha256": "4747248285114629a061c0f9dd4618926ab041875cc11b6a3bc2418df0a4b02c"
+      },
+      "source_number": 39,
+      "source_tip": null,
+      "source_usage": "face a moral / ethical dilemma 面临道德两难困境"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "proliferation",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "proliferation"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-040",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "激增；扩散；大量涌现",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/prəˌlɪfəˈreɪʃn/"
+      ],
+      "source": {
+        "cells": [
+          "40",
+          "**proliferation**",
+          "`/prəˌlɪfəˈreɪʃn/`",
+          "n.",
+          "激增；扩散；大量涌现",
+          "`the proliferation of digital devices` 数字设备的激增（浓缩原文长串数量增长描述）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 126,
+        "raw_row": "| 40 | **proliferation** | `/prəˌlɪfəˈreɪʃn/` | n. | 激增；扩散；大量涌现 | `the proliferation of digital devices` 数字设备的激增（浓缩原文长串数量增长描述） |",
+        "row_sha256": "5754b08f180d13facbca173e00bc359fcf6b381f4193e950671d166b2a8a0afb"
+      },
+      "source_number": 40,
+      "source_tip": null,
+      "source_usage": "the proliferation of digital devices 数字设备的激增（浓缩原文长串数量增长描述）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "deterioration",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "deterioration"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-041",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "恶化；退化；衰退",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/dɪˌtɪəriəˈreɪʃn/"
+      ],
+      "source": {
+        "cells": [
+          "41",
+          "**deterioration**",
+          "`/dɪˌtɪəriəˈreɪʃn/`",
+          "n.",
+          "恶化；退化；衰退",
+          "`cognitive / environmental deterioration` 认知退化 / 环境恶化（v. `deteriorate`）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 127,
+        "raw_row": "| 41 | **deterioration** | `/dɪˌtɪəriəˈreɪʃn/` | n. | 恶化；退化；衰退 | `cognitive / environmental deterioration` 认知退化 / 环境恶化（v. `deteriorate`） |",
+        "row_sha256": "df50f208b5392e268a2d80759a514468ed8effd95b7dfbaf6e9df8a6fdf1d36f"
+      },
+      "source_number": 41,
+      "source_tip": null,
+      "source_usage": "cognitive / environmental deterioration 认知退化 / 环境恶化（v. deteriorate）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "disparity",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "disparity"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-042",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "（尤指不公正的）悬殊差距，不等",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/dɪˈspærəti/"
+      ],
+      "source": {
+        "cells": [
+          "42",
+          "**disparity**",
+          "`/dɪˈspærəti/`",
+          "n.",
+          "（尤指不公正的）悬殊差距，不等",
+          "`bridge the regional disparity` 弥合地区差距"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 128,
+        "raw_row": "| 42 | **disparity** | `/dɪˈspærəti/` | n. | （尤指不公正的）悬殊差距，不等 | `bridge the regional disparity` 弥合地区差距 |",
+        "row_sha256": "42c278e798a64e35a482c46cffbec07325f4825bdc3b59e34f2df12775689e88"
+      },
+      "source_number": 42,
+      "source_tip": null,
+      "source_usage": "bridge the regional disparity 弥合地区差距"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "prevalent",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "prevalent"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-043",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "普遍存在的；盛行的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈprevələnt/"
+      ],
+      "source": {
+        "cells": [
+          "43",
+          "**prevalent**",
+          "`/ˈprevələnt/`",
+          "adj.",
+          "普遍存在的；盛行的",
+          "`become increasingly prevalent among youth`；n. `prevalence` 盛行"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 129,
+        "raw_row": "| 43 | **prevalent** | `/ˈprevələnt/` | adj. | 普遍存在的；盛行的 | `become increasingly prevalent among youth`；n. `prevalence` 盛行 |",
+        "row_sha256": "fc1035b77bea95371679a62da6fe062991e78e34ea638408d82c52aaf36f43aa"
+      },
+      "source_number": 43,
+      "source_tip": null,
+      "source_usage": "become increasingly prevalent among youth；n. prevalence 盛行"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "catalyst",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "catalyst"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-044",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "催化剂；促进因素；诱因",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈkætəlɪst/"
+      ],
+      "source": {
+        "cells": [
+          "44",
+          "**catalyst**",
+          "`/ˈkætəlɪst/`",
+          "n.",
+          "催化剂；促进因素；诱因",
+          "`act as a catalyst for reform` 成为变革的催化剂"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 130,
+        "raw_row": "| 44 | **catalyst** | `/ˈkætəlɪst/` | n. | 催化剂；促进因素；诱因 | `act as a catalyst for reform` 成为变革的催化剂 |",
+        "row_sha256": "44d2ad09fcc8e0350265e333ac95f3ba5eaaa53b608ab193c591df7733b39b89"
+      },
+      "source_number": 44,
+      "source_tip": null,
+      "source_usage": "act as a catalyst for reform 成为变革的催化剂"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "scrutiny",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "scrutiny"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-045",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "仔细审查；严密监督",
+      "ordinary_meaning": null,
+      "part_of_speech": "n.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈskruːtəni/"
+      ],
+      "source": {
+        "cells": [
+          "45",
+          "**scrutiny**",
+          "`/ˈskruːtəni/`",
+          "n.",
+          "仔细审查；严密监督",
+          "`come under close public scrutiny` 受到公众严密审视"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 131,
+        "raw_row": "| 45 | **scrutiny** | `/ˈskruːtəni/` | n. | 仔细审查；严密监督 | `come under close public scrutiny` 受到公众严密审视 |",
+        "row_sha256": "1d1b06088c85e7920684988fb5bcc851650f59231206c5c9ce73f6ad80cb4121"
+      },
+      "source_number": 45,
+      "source_tip": null,
+      "source_usage": "come under close public scrutiny 受到公众严密审视"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "viable",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "viable"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-046",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "切实可行的；能独立发展的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˈvaɪəbl/"
+      ],
+      "source": {
+        "cells": [
+          "46",
+          "**viable**",
+          "`/ˈvaɪəbl/`",
+          "adj.",
+          "切实可行的；能独立发展的",
+          "`a viable alternative / solution` 切实可行的替代方案（Summary 结尾对策段必用词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 132,
+        "raw_row": "| 46 | **viable** | `/ˈvaɪəbl/` | adj. | 切实可行的；能独立发展的 | `a viable alternative / solution` 切实可行的替代方案（Summary 结尾对策段必用词） |",
+        "row_sha256": "49e80d3ce2dda9dab2409d4d9b37d1b1456069010c20f0c49b056d1d6f9d24d6"
+      },
+      "source_number": 46,
+      "source_tip": null,
+      "source_usage": "a viable alternative / solution 切实可行的替代方案（Summary 结尾对策段必用词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "detrimental",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "detrimental"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-047",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "有害的；不利的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌdetrɪˈmentl/"
+      ],
+      "source": {
+        "cells": [
+          "47",
+          "**detrimental**",
+          "`/ˌdetrɪˈmentl/`",
+          "adj.",
+          "有害的；不利的",
+          "`be detrimental to adolescent mental health`（高阶替换 `harmful`）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 133,
+        "raw_row": "| 47 | **detrimental** | `/ˌdetrɪˈmentl/` | adj. | 有害的；不利的 | `be detrimental to adolescent mental health`（高阶替换 `harmful`） |",
+        "row_sha256": "b8b3cab5c0a734651f7bba4da88588b7f47a5dd99f59cbd53af48b1bf2020661"
+      },
+      "source_number": 47,
+      "source_tip": null,
+      "source_usage": "be detrimental to adolescent mental health（高阶替换 harmful）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "conducive",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "conducive"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-048",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "有益于…的；有助于…的",
+      "ordinary_meaning": null,
+      "part_of_speech": "adj.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/kənˈdjuːsɪv/"
+      ],
+      "source": {
+        "cells": [
+          "48",
+          "**conducive**",
+          "`/kənˈdjuːsɪv/`",
+          "adj.",
+          "有益于…的；有助于…的",
+          "`be conducive to independent thinking`（注意后接介词 `to` + 名词/动名词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 134,
+        "raw_row": "| 48 | **conducive** | `/kənˈdjuːsɪv/` | adj. | 有益于…的；有助于…的 | `be conducive to independent thinking`（注意后接介词 `to` + 名词/动名词） |",
+        "row_sha256": "3c4e653a4df785f9e6c45958a847b93239043cdd74bf2b8e3c72239f96ed0f69"
+      },
+      "source_number": 48,
+      "source_tip": null,
+      "source_usage": "be conducive to independent thinking（注意后接介词 to + 名词/动名词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "alleviate",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "alleviate"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-049",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "减轻；缓解；缓和（痛苦/问题）",
+      "ordinary_meaning": null,
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/əˈliːvieɪt/"
+      ],
+      "source": {
+        "cells": [
+          "49",
+          "**alleviate**",
+          "`/əˈliːvieɪt/`",
+          "v.",
+          "减轻；缓解；缓和（痛苦/问题）",
+          "`alleviate academic burden / traffic congestion`（Summary 措施段核心动词）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 135,
+        "raw_row": "| 49 | **alleviate** | `/əˈliːvieɪt/` | v. | 减轻；缓解；缓和（痛苦/问题） | `alleviate academic burden / traffic congestion`（Summary 措施段核心动词） |",
+        "row_sha256": "dd0e02d55e5bcf98f9a8e3e94d9e2b58e946d1afc51daff3f207dd54ba5985fc"
+      },
+      "source_number": 49,
+      "source_tip": null,
+      "source_usage": "alleviate academic burden / traffic congestion（Summary 措施段核心动词）"
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "undermine",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "undermine"
+      ],
+      "group": "L5_A",
+      "id": "VOCAB-050",
+      "kind": "word",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "暗中破坏；逐渐削弱（根基/信心）",
+      "ordinary_meaning": null,
+      "part_of_speech": "v.",
+      "phonetic_core_word": null,
+      "phonetics": [
+        "/ˌʌndəˈmaɪn/"
+      ],
+      "source": {
+        "cells": [
+          "50",
+          "**undermine**",
+          "`/ˌʌndəˈmaɪn/`",
+          "v.",
+          "暗中破坏；逐渐削弱（根基/信心）",
+          "`undermine mutual trust / executive function` 削弱互信/执行功能"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 136,
+        "raw_row": "| 50 | **undermine** | `/ˌʌndəˈmaɪn/` | v. | 暗中破坏；逐渐削弱（根基/信心） | `undermine mutual trust / executive function` 削弱互信/执行功能 |",
+        "row_sha256": "ec9dea04bdef8ce4cf3b0336f656bb4e7d44828b14aab11110b593fa1ca36818"
+      },
+      "source_number": 50,
+      "source_tip": null,
+      "source_usage": "undermine mutual trust / executive function 削弱互信/执行功能"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "take...for granted",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "take...for granted"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-051",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "认为…理所当然；想当然",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "granted",
+      "phonetics": [
+        "/ˈɡrɑːntɪd/"
+      ],
+      "source": {
+        "cells": [
+          "51",
+          "**take...for granted**",
+          "`/ˈɡrɑːntɪd/`",
+          "认为…理所当然；想当然",
+          "`take it for granted that + 从句`（注意形式宾语 `it` 漏写扣 1 分）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 146,
+        "raw_row": "| 51 | **take...for granted** | `/ˈɡrɑːntɪd/` | 认为…理所当然；想当然 | `take it for granted that + 从句`（注意形式宾语 `it` 漏写扣 1 分） |",
+        "row_sha256": "d7e7ded744e1b1d3a9d8507d9e4a5bd87a04c08f5493f87dfe6f9f3bade111ef"
+      },
+      "source_number": 51,
+      "source_tip": null,
+      "source_usage": "take it for granted that + 从句（注意形式宾语 it 漏写扣 1 分）"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "be bound to do",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "be bound to do"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-052",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "注定会…；必定会…",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "bound",
+      "phonetics": [
+        "/baʊnd/"
+      ],
+      "source": {
+        "cells": [
+          "52",
+          "**be bound to do**",
+          "`/baʊnd/`",
+          "注定会…；必定会…",
+          "`Hard work is bound to pay off in the long run.`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 147,
+        "raw_row": "| 52 | **be bound to do** | `/baʊnd/` | 注定会…；必定会… | `Hard work is bound to pay off in the long run.` |",
+        "row_sha256": "67defaccd3da2ce91129a2da2ec6d367f8b2710cc363dbcb3cc04332654d013d"
+      },
+      "source_number": 52,
+      "source_tip": null,
+      "source_usage": "Hard work is bound to pay off in the long run."
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "at the expense of",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "at the expense of"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-053",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "以牺牲…为代价",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "expense",
+      "phonetics": [
+        "/ɪkˈspens/"
+      ],
+      "source": {
+        "cells": [
+          "53",
+          "**at the expense of**",
+          "`/ɪkˈspens/`",
+          "以牺牲…为代价",
+          "`pursue economic growth at the expense of the environment`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 148,
+        "raw_row": "| 53 | **at the expense of** | `/ɪkˈspens/` | 以牺牲…为代价 | `pursue economic growth at the expense of the environment` |",
+        "row_sha256": "1847cfa4491c542ab6558cfe2d62c2a8cb00b12ba63b38de8c8335abcdcd5d27"
+      },
+      "source_number": 53,
+      "source_tip": null,
+      "source_usage": "pursue economic growth at the expense of the environment"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "give way to",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "give way to"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-054",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "让位于…；被…取代；向…妥协",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "way",
+      "phonetics": [
+        "/weɪ/"
+      ],
+      "source": {
+        "cells": [
+          "54",
+          "**give way to**",
+          "`/weɪ/`",
+          "让位于…；被…取代；向…妥协",
+          "`Initial panic gradually gave way to calm reflection.`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 149,
+        "raw_row": "| 54 | **give way to** | `/weɪ/` | 让位于…；被…取代；向…妥协 | `Initial panic gradually gave way to calm reflection.` |",
+        "row_sha256": "85f6ee5ca17255fba492168e9c7c7e458428a6386ea844669d55dd712f6e1a0a"
+      },
+      "source_number": 54,
+      "source_tip": null,
+      "source_usage": "Initial panic gradually gave way to calm reflection."
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "live up to",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "live up to"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-055",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "不辜负；达到（期望/标准）",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "live",
+      "phonetics": [
+        "/lɪv/"
+      ],
+      "source": {
+        "cells": [
+          "55",
+          "**live up to**",
+          "`/lɪv/`",
+          "不辜负；达到（期望/标准）",
+          "`live up to parents' expectations` 不辜负父母的期望"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 150,
+        "raw_row": "| 55 | **live up to** | `/lɪv/` | 不辜负；达到（期望/标准） | `live up to parents' expectations` 不辜负父母的期望 |",
+        "row_sha256": "8632cac7338d817360fc3c51c2d94dcc4e79b05a969e3600575dd3501365b927"
+      },
+      "source_number": 55,
+      "source_tip": null,
+      "source_usage": "live up to parents' expectations 不辜负父母的期望"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "attribute A to B",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "attribute A to B"
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-056",
+      "kind": "chunk",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "把 A 归因于 B / 认为 A 出自 B",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "attribute",
+      "phonetics": [
+        "/əˈtrɪbjuːt/"
+      ],
+      "source": {
+        "cells": [
+          "56",
+          "**attribute A to B**",
+          "`/əˈtrɪbjuːt/`",
+          "把 A 归因于 B / 认为 A 出自 B",
+          "被动：`A be attributed to B`（同义转换：`owe A to B` / `ascribe A to B`）"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 151,
+        "raw_row": "| 56 | **attribute A to B** | `/əˈtrɪbjuːt/` | 把 A 归因于 B / 认为 A 出自 B | 被动：`A be attributed to B`（同义转换：`owe A to B` / `ascribe A to B`） |",
+        "row_sha256": "e44e3e2f08c93f33f1b2bfb645d24a93d47eaa1a00778b83502d098908525e42"
+      },
+      "source_number": 56,
+      "source_tip": null,
+      "source_usage": "被动：A be attributed to B（同义转换：owe A to B / ascribe A to B）"
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Not until... did...",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "Not until... did..."
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-057",
+      "kind": "pattern",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "直到…才…（句首部分倒装）",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "until",
+      "phonetics": [
+        "/ʌnˈtɪl/"
+      ],
+      "source": {
+        "cells": [
+          "57",
+          "**Not until... did...**",
+          "`/ʌnˈtɪl/`",
+          "直到…才…（句首部分倒装）",
+          "`Not until he experienced failure did he realize the value of persistence.`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 152,
+        "raw_row": "| 57 | **Not until... did...** | `/ʌnˈtɪl/` | 直到…才…（句首部分倒装） | `Not until he experienced failure did he realize the value of persistence.` |",
+        "row_sha256": "0b21b074054f6ee1704c9e3477afe483f87e79f604c6b83b5f46fe93792cf52d"
+      },
+      "source_number": 57,
+      "source_tip": null,
+      "source_usage": "Not until he experienced failure did he realize the value of persistence."
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Hardly... when... / No sooner... than...",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "Hardly... when...",
+        "No sooner... than..."
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-058",
+      "kind": "pattern",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "一…就…（主句过去完成时倒装）",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "hardly",
+      "phonetics": [
+        "/ˈhɑːdli/"
+      ],
+      "source": {
+        "cells": [
+          "58",
+          "**Hardly... when...**<br>**No sooner... than...**",
+          "`/ˈhɑːdli/`",
+          "一…就…（主句过去完成时倒装）",
+          "`Hardly had the policy been announced when it sparked heated debate.`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 153,
+        "raw_row": "| 58 | **Hardly... when...**<br>**No sooner... than...** | `/ˈhɑːdli/` | 一…就…（主句过去完成时倒装） | `Hardly had the policy been announced when it sparked heated debate.` |",
+        "row_sha256": "6e0bbff1b6090429b9fca460914a79e9ecdc1b0ebd4e28c3a2e97c1754cb380d"
+      },
+      "source_number": 58,
+      "source_tip": null,
+      "source_usage": "Hardly had the policy been announced when it sparked heated debate."
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Nothing is more... than...",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "Nothing is more... than..."
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-059",
+      "kind": "pattern",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "没有什么比…更…（否定词+比较级表最高级）",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "more",
+      "phonetics": [
+        "/mɔː(r)/"
+      ],
+      "source": {
+        "cells": [
+          "59",
+          "**Nothing is more... than...**",
+          "`/mɔː(r)/`",
+          "没有什么比…更…（否定词+比较级表最高级）",
+          "`Nothing is more rewarding than overcoming a challenge through teamwork.`"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 154,
+        "raw_row": "| 59 | **Nothing is more... than...** | `/mɔː(r)/` | 没有什么比…更…（否定词+比较级表最高级） | `Nothing is more rewarding than overcoming a challenge through teamwork.` |",
+        "row_sha256": "f74b322d1a0e9a1f0f19ec274652ba36fd2b7e8645409a677e2258fb472cf79a"
+      },
+      "source_number": 59,
+      "source_tip": null,
+      "source_usage": "Nothing is more rewarding than overcoming a challenge through teamwork."
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "It goes without saying that...",
+      "exam_origin": "provided_source_not_independently_verified",
+      "forms": [
+        "It goes without saying that..."
+      ],
+      "group": "L5_B",
+      "id": "VOCAB-060",
+      "kind": "pattern",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "不言而喻…；毫无疑问…",
+      "ordinary_meaning": null,
+      "part_of_speech": null,
+      "phonetic_core_word": "saying",
+      "phonetics": [
+        "/ˈseɪɪŋ/"
+      ],
+      "source": {
+        "cells": [
+          "60",
+          "**It goes without saying that...**",
+          "`/ˈseɪɪŋ/`",
+          "不言而喻…；毫无疑问…",
+          "大作文与中译英通用高分起手式"
+        ],
+        "document": "DOC-VOCAB-02",
+        "line": 155,
+        "raw_row": "| 60 | **It goes without saying that...** | `/ˈseɪɪŋ/` | 不言而喻…；毫无疑问… | 大作文与中译英通用高分起手式 |",
+        "row_sha256": "353bb6f6296cfda98995413ce7292cea3f7359c21035ebd4c94780d930da4b22"
+      },
+      "source_number": 60,
+      "source_tip": null,
+      "source_usage": "大作文与中译英通用高分起手式"
+    }
+  ],
+  "protocol": "vocabulary-content-v1",
+  "quiz_ready_count": 0,
+  "source": {
+    "document": "DOC-VOCAB-02",
+    "path": "docs/02_同济附中_上海高考高分分级词库构建方案与核心词表.md",
+    "sha256": "565c94488001e681c8723bc79b07ad2455f9d0f1387dc07a49f724db8aa1aea8"
+  },
+  "source_record_count": 60,
+  "surface_form_count": 61,
+  "targets": [
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "phenomenon",
+      "entry_id": "VOCAB-001",
+      "id": "VOCAB-001-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "现象；杰出的人或事物",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/fəˈnɒmɪnən/"
+      ],
+      "quiz_ready": false,
+      "source_number": 1
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "comprehension",
+      "entry_id": "VOCAB-002",
+      "id": "VOCAB-002-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "理解力；领悟；包含",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌkɒmprɪˈhenʃn/"
+      ],
+      "quiz_ready": false,
+      "source_number": 2
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "sustainable",
+      "entry_id": "VOCAB-003",
+      "id": "VOCAB-003-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "可持续的；站得住脚的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/səˈsteɪnəbl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 3
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "imperceptible",
+      "entry_id": "VOCAB-004",
+      "id": "VOCAB-004-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "极细微的；察觉不到的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌɪmpəˈseptəbl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 4
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "irreplaceable",
+      "entry_id": "VOCAB-005",
+      "id": "VOCAB-005-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "不可替代的；独一无二的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌɪrɪˈpleɪsəbl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 5
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "invariably",
+      "entry_id": "VOCAB-006",
+      "id": "VOCAB-006-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "总是；毫无例外地；一贯地",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ɪnˈveəriəbli/"
+      ],
+      "quiz_ready": false,
+      "source_number": 6
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "unjustified",
+      "entry_id": "VOCAB-007",
+      "id": "VOCAB-007-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "无正当理由的；不合理的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ʌnˈdʒʌstɪfaɪd/"
+      ],
+      "quiz_ready": false,
+      "source_number": 7
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "accommodate",
+      "entry_id": "VOCAB-008",
+      "id": "VOCAB-008-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "容纳；为…提供住宿；顺应/迁就",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈkɒmədeɪt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 8
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "embarrass",
+      "entry_id": "VOCAB-009",
+      "id": "VOCAB-009-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "使尴尬；使窘迫；使为难",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ɪmˈbærəs/"
+      ],
+      "quiz_ready": false,
+      "source_number": 9
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "occurrence",
+      "entry_id": "VOCAB-010",
+      "id": "VOCAB-010-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "发生的事情；出现；存在",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈkʌrəns/"
+      ],
+      "quiz_ready": false,
+      "source_number": 10
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "conscientious",
+      "entry_id": "VOCAB-011",
+      "id": "VOCAB-011-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "认真尽责的；一丝不苟的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌkɒnʃiˈenʃəs/"
+      ],
+      "quiz_ready": false,
+      "source_number": 11
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "indispensable",
+      "entry_id": "VOCAB-012",
+      "id": "VOCAB-012-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "不可或缺的；绝对必要的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌɪndɪˈspensəbl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 12
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "privilege",
+      "entry_id": "VOCAB-013",
+      "id": "VOCAB-013-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "特权；荣幸；给予特权",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈprɪvəlɪdʒ/"
+      ],
+      "quiz_ready": false,
+      "source_number": 13
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "perseverance",
+      "entry_id": "VOCAB-014",
+      "id": "VOCAB-014-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "毅力；韧性；不屈不挠",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌpɜːsɪˈvɪərəns/"
+      ],
+      "quiz_ready": false,
+      "source_number": 14
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "simultaneously",
+      "entry_id": "VOCAB-015",
+      "id": "VOCAB-015-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "meaning": "同时地；同步地",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌsɪmlˈteɪniəsli/"
+      ],
+      "quiz_ready": false,
+      "source_number": 15
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "address",
+      "entry_id": "VOCAB-016",
+      "id": "VOCAB-016-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 着手解决；处理；应对；向…发表演说",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈdres/"
+      ],
+      "quiz_ready": false,
+      "source_number": 16
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "harbor",
+      "entry_id": "VOCAB-017",
+      "id": "VOCAB-017-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 心怀（怨恨/疑虑/想法）；庇护，窝藏",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈhɑːbə(r)/"
+      ],
+      "quiz_ready": false,
+      "source_number": 17
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "compromise",
+      "entry_id": "VOCAB-018",
+      "id": "VOCAB-018-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 危及；损害；使陷入危险",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈkɒmprəmaɪz/"
+      ],
+      "quiz_ready": false,
+      "source_number": 18
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "novel",
+      "entry_id": "VOCAB-019",
+      "id": "VOCAB-019-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 新颖的；新奇的；前所未有的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈnɒvl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 19
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "subject",
+      "entry_id": "VOCAB-020",
+      "id": "VOCAB-020-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 易遭受…的 (be subject to)；n. 实验受试者；v. 使经历",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset",
+        "verified_variant_or_sense_phonetics"
+      ],
+      "phonetic_scope": "unmapped_part_of_speech",
+      "phonetics": [
+        "/ˈsʌbdʒɪkt/",
+        "/səbˈdʒekt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 20
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "faculty",
+      "entry_id": "VOCAB-021",
+      "id": "VOCAB-021-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "n. （人体的）官能，感官；心智能力，天赋",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈfæklti/"
+      ],
+      "quiz_ready": false,
+      "source_number": 21
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "pronounced",
+      "entry_id": "VOCAB-022",
+      "id": "VOCAB-022-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 显著的；明显的；明确的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/prəˈnaʊnst/"
+      ],
+      "quiz_ready": false,
+      "source_number": 22
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "promise",
+      "entry_id": "VOCAB-023",
+      "id": "VOCAB-023-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 预示着；有望带来；n. 获得成功的迹象",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈprɒmɪs/"
+      ],
+      "quiz_ready": false,
+      "source_number": 23
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "weather",
+      "entry_id": "VOCAB-024",
+      "id": "VOCAB-024-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 经受住，平安度过（危机/风暴/困难）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈweðə(r)/"
+      ],
+      "quiz_ready": false,
+      "source_number": 24
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "fuel",
+      "entry_id": "VOCAB-025",
+      "id": "VOCAB-025-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 刺激；加剧；推动（情绪/趋势增长）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈfjuːəl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 25
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "tailor",
+      "entry_id": "VOCAB-026",
+      "id": "VOCAB-026-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 专门定制；使适应特定需求 (tailor...to...)",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈteɪlə(r)/"
+      ],
+      "quiz_ready": false,
+      "source_number": 26
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "subscribe",
+      "entry_id": "VOCAB-027",
+      "id": "VOCAB-027-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 赞同，认可（观点/理论）(subscribe to)",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/səbˈskraɪb/"
+      ],
+      "quiz_ready": false,
+      "source_number": 27
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "dismiss",
+      "entry_id": "VOCAB-028",
+      "id": "VOCAB-028-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 对…不予理会；摒弃（想法）；认为…不值得考虑",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/dɪsˈmɪs/"
+      ],
+      "quiz_ready": false,
+      "source_number": 28
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "tap",
+      "entry_id": "VOCAB-029",
+      "id": "VOCAB-029-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 开发，发掘，利用（潜力/资源/市场）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/tæp/"
+      ],
+      "quiz_ready": false,
+      "source_number": 29
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "sound",
+      "entry_id": "VOCAB-030",
+      "id": "VOCAB-030-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 明智的；合理的；可靠的；酣畅的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/saʊnd/"
+      ],
+      "quiz_ready": false,
+      "source_number": 30
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "arrest",
+      "entry_id": "VOCAB-031",
+      "id": "VOCAB-031-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 阻止，抑制（衰退/发展）；吸引（注意力）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈrest/"
+      ],
+      "quiz_ready": false,
+      "source_number": 31
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "check",
+      "entry_id": "VOCAB-032",
+      "id": "VOCAB-032-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v./n. 抑制，遏制，控制 (keep...in check)",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/tʃek/"
+      ],
+      "quiz_ready": false,
+      "source_number": 32
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "credit",
+      "entry_id": "VOCAB-033",
+      "id": "VOCAB-033-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "v. 把…归功于 (credit A to B)；n. 赞扬，功劳",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈkredɪt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 33
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "allowance",
+      "entry_id": "VOCAB-034",
+      "id": "VOCAB-034-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "n. 体谅，考虑到 (make allowance(s) for)",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈlaʊəns/"
+      ],
+      "quiz_ready": false,
+      "source_number": 34
+    },
+    {
+      "assessment_goals": [
+        "receptive"
+      ],
+      "english": "informed",
+      "entry_id": "VOCAB-035",
+      "id": "VOCAB-035-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L3"
+      ],
+      "meaning": "adj. 见多识广的；有充分依据的；明智的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ɪnˈfɔːmd/"
+      ],
+      "quiz_ready": false,
+      "source_number": 35
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "ambiguous",
+      "entry_id": "VOCAB-036",
+      "id": "VOCAB-036-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "模棱两可的；含糊不清的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/æmˈbɪɡjuəs/"
+      ],
+      "quiz_ready": false,
+      "source_number": 36
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "skeptical",
+      "entry_id": "VOCAB-037",
+      "id": "VOCAB-037-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "持怀疑态度的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈskeptɪkl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 37
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "paradox",
+      "entry_id": "VOCAB-038",
+      "id": "VOCAB-038-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "悖论；自相矛盾的现象",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈpærədɒks/"
+      ],
+      "quiz_ready": false,
+      "source_number": 38
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "dilemma",
+      "entry_id": "VOCAB-039",
+      "id": "VOCAB-039-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "进退两难的困境",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/dɪˈlemə/"
+      ],
+      "quiz_ready": false,
+      "source_number": 39
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "proliferation",
+      "entry_id": "VOCAB-040",
+      "id": "VOCAB-040-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "激增；扩散；大量涌现",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/prəˌlɪfəˈreɪʃn/"
+      ],
+      "quiz_ready": false,
+      "source_number": 40
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "deterioration",
+      "entry_id": "VOCAB-041",
+      "id": "VOCAB-041-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "恶化；退化；衰退",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/dɪˌtɪəriəˈreɪʃn/"
+      ],
+      "quiz_ready": false,
+      "source_number": 41
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "disparity",
+      "entry_id": "VOCAB-042",
+      "id": "VOCAB-042-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "（尤指不公正的）悬殊差距，不等",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/dɪˈspærəti/"
+      ],
+      "quiz_ready": false,
+      "source_number": 42
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "prevalent",
+      "entry_id": "VOCAB-043",
+      "id": "VOCAB-043-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "普遍存在的；盛行的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈprevələnt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 43
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "catalyst",
+      "entry_id": "VOCAB-044",
+      "id": "VOCAB-044-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "催化剂；促进因素；诱因",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈkætəlɪst/"
+      ],
+      "quiz_ready": false,
+      "source_number": 44
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "scrutiny",
+      "entry_id": "VOCAB-045",
+      "id": "VOCAB-045-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "仔细审查；严密监督",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈskruːtəni/"
+      ],
+      "quiz_ready": false,
+      "source_number": 45
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "viable",
+      "entry_id": "VOCAB-046",
+      "id": "VOCAB-046-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "切实可行的；能独立发展的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˈvaɪəbl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 46
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "detrimental",
+      "entry_id": "VOCAB-047",
+      "id": "VOCAB-047-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "有害的；不利的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌdetrɪˈmentl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 47
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "conducive",
+      "entry_id": "VOCAB-048",
+      "id": "VOCAB-048-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "有益于…的；有助于…的",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/kənˈdjuːsɪv/"
+      ],
+      "quiz_ready": false,
+      "source_number": 48
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "alleviate",
+      "entry_id": "VOCAB-049",
+      "id": "VOCAB-049-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "减轻；缓解；缓和（痛苦/问题）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/əˈliːvieɪt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 49
+    },
+    {
+      "assessment_goals": [
+        "receptive",
+        "productive"
+      ],
+      "english": "undermine",
+      "entry_id": "VOCAB-050",
+      "id": "VOCAB-050-a",
+      "kind": "word",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "暗中破坏；逐渐削弱（根基/信心）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "headword",
+      "phonetics": [
+        "/ˌʌndəˈmaɪn/"
+      ],
+      "quiz_ready": false,
+      "source_number": 50
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "take...for granted",
+      "entry_id": "VOCAB-051",
+      "id": "VOCAB-051-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "认为…理所当然；想当然",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/ˈɡrɑːntɪd/"
+      ],
+      "quiz_ready": false,
+      "source_number": 51
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "be bound to do",
+      "entry_id": "VOCAB-052",
+      "id": "VOCAB-052-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "注定会…；必定会…",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/baʊnd/"
+      ],
+      "quiz_ready": false,
+      "source_number": 52
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "at the expense of",
+      "entry_id": "VOCAB-053",
+      "id": "VOCAB-053-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "以牺牲…为代价",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/ɪkˈspens/"
+      ],
+      "quiz_ready": false,
+      "source_number": 53
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "give way to",
+      "entry_id": "VOCAB-054",
+      "id": "VOCAB-054-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "让位于…；被…取代；向…妥协",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/weɪ/"
+      ],
+      "quiz_ready": false,
+      "source_number": 54
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "live up to",
+      "entry_id": "VOCAB-055",
+      "id": "VOCAB-055-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "不辜负；达到（期望/标准）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/lɪv/"
+      ],
+      "quiz_ready": false,
+      "source_number": 55
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "attribute A to B",
+      "entry_id": "VOCAB-056",
+      "id": "VOCAB-056-a",
+      "kind": "chunk",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "把 A 归因于 B / 认为 A 出自 B",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/əˈtrɪbjuːt/"
+      ],
+      "quiz_ready": false,
+      "source_number": 56
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Not until... did...",
+      "entry_id": "VOCAB-057",
+      "id": "VOCAB-057-a",
+      "kind": "pattern",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "直到…才…（句首部分倒装）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/ʌnˈtɪl/"
+      ],
+      "quiz_ready": false,
+      "source_number": 57
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Hardly... when...",
+      "entry_id": "VOCAB-058",
+      "id": "VOCAB-058-a",
+      "kind": "pattern",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "一…就…（主句过去完成时倒装）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/ˈhɑːdli/"
+      ],
+      "quiz_ready": false,
+      "source_number": 58
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "No sooner... than...",
+      "entry_id": "VOCAB-058",
+      "id": "VOCAB-058-b",
+      "kind": "pattern",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "一…就…（主句过去完成时倒装）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset",
+        "verified_variant_or_sense_phonetics"
+      ],
+      "phonetic_scope": "missing_for_variant",
+      "phonetics": [],
+      "quiz_ready": false,
+      "source_number": 58
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "Nothing is more... than...",
+      "entry_id": "VOCAB-059",
+      "id": "VOCAB-059-a",
+      "kind": "pattern",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "没有什么比…更…（否定词+比较级表最高级）",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/mɔː(r)/"
+      ],
+      "quiz_ready": false,
+      "source_number": 59
+    },
+    {
+      "assessment_goals": [
+        "productive"
+      ],
+      "english": "It goes without saying that...",
+      "entry_id": "VOCAB-060",
+      "id": "VOCAB-060-a",
+      "kind": "pattern",
+      "learning_identity": "requires_versioned_target_sense_id",
+      "levels": [
+        "L5"
+      ],
+      "meaning": "不言而喻…；毫无疑问…",
+      "missing_materials": [
+        "verified_target_sense",
+        "complete_bilingual_context",
+        "accepted_answer_forms",
+        "mode_specific_materials",
+        "british_audio_asset",
+        "american_audio_asset"
+      ],
+      "phonetic_scope": "core_word_only",
+      "phonetics": [
+        "/ˈseɪɪŋ/"
+      ],
+      "quiz_ready": false,
+      "source_number": 60
+    }
+  ]
+}

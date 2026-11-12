@@ -1,0 +1,13 @@
+{
+  "bundle_digest": "fc2319ba638801590426b5ed42110f1c74780ce03662d6b90d3a80422e5a5149",
+  "bundle_version": "vocabulary-baseline-v1.0.0",
+  "files": {
+    "acceptance-vectors.json": "1e175ac1cf74fcaf9096bdad17e3016b63bca5f935a9398571645fd7c1adb1e9",
+    "content.json": "f47a9281b051bc4d9efcf21f61107a1bd01691d1637d3d44abcbc8d83d299547",
+    "docs/01_办公室AI智能背词助教终端_功能性需求.md": "7d66ee1959401c13e234163d146d4d604713fe574533d034aca3299cdbf126b4",
+    "docs/02_同济附中_上海高考高分分级词库构建方案与核心词表.md": "565c94488001e681c8723bc79b07ad2455f9d0f1387dc07a49f724db8aa1aea8",
+    "policy.json": "f1b9169be14fb1e4644daf79398e1c620e330de9444c741cec1cf6c58db8a01d",
+    "product-spec.json": "6a4207d562ca378202ee9d212abb7fbd9605afba94078eb06689a50b7bb71bbf"
+  },
+  "protocol": "vocabulary-baseline-export-v1"
+}

@@ -1,0 +1,1166 @@
+{
+  "bundle_version": "vocabulary-baseline-v1.0.0",
+  "comparison": "expected中的键为独立QA适配器需采集的业务事实，标量/列表精确比较；仅显式tolerance字段允许数值误差。adapter同时保存实际请求、响应、记录和适用设备/服务证据；不能由应用生成expected。",
+  "protocol": "vocabulary-acceptance-v1",
+  "scenarios": [
+    {
+      "cases": [
+        {
+          "action": "在登记Pad逐字符核对IPA并进入/退出全屏",
+          "expected": {
+            "all_primary_controls_reachable": true,
+            "fullscreen_exit_works": true,
+            "ipa_exact": true,
+            "secret_settings_visible": false,
+            "teacher_entry_visible": false
+          },
+          "input": {
+            "ipa": [
+              "/ˌkɒmprɪˈhenʃn/",
+              "/fəˈnɒmɪnən/",
+              "/ˌɪmpəˈseptəbl/"
+            ],
+            "orientation": "landscape",
+            "route": "/pad"
+          },
+          "key": "UI-IPA-FULLSCREEN",
+          "target_ids": [
+            "VOCAB-002-a",
+            "VOCAB-001-a",
+            "VOCAB-004-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-UI-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "读取演示前后真实库摘要并操作所有演示通道",
+          "expected": {
+            "demo_label_always_visible": true,
+            "distinct_demo_personas": 4,
+            "real_audio_count_unchanged": true,
+            "real_class_metrics_unchanged": true,
+            "real_learning_digest_unchanged": true
+          },
+          "input": {
+            "operations": [
+              "switch_each_student",
+              "simulate_correct",
+              "simulate_wrong",
+              "manual_mode_switch"
+            ],
+            "real_protected_record_count": 1,
+            "students": [
+              "张晓明",
+              "李佳琪",
+              "王浩然",
+              "陈思远"
+            ]
+          },
+          "key": "DEMO-FOUR-ISOLATED",
+          "target_ids": []
+        }
+      ],
+      "scenario_key": "VOC-DEMO-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "核对两次真实登录、退登失效及本人范围",
+          "expected": {
+            "a_answer_owner": "qa-a",
+            "a_records_in_local_cache": 0,
+            "a_session_replay_rejected": true,
+            "b_visible_student_ids": [
+              "qa-b"
+            ]
+          },
+          "input": {
+            "sequence": [
+              "a_login",
+              "a_answer",
+              "a_logout",
+              "b_login",
+              "replay_a_session",
+              "read_local_cache"
+            ],
+            "student_a": "qa-a",
+            "student_b": "qa-b"
+          },
+          "key": "IDENTITY-SHARED-PAD",
+          "target_ids": []
+        }
+      ],
+      "scenario_key": "VOC-IDENTITY-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "学生直接请求每个教师资源，A班教师直接请求B班数据",
+          "expected": {
+            "secret_fields_returned": 0,
+            "student_requests_rejected": 5,
+            "teacher_cross_class_rejected": true,
+            "unauthorized_records_returned": 0
+          },
+          "input": {
+            "forbidden_class": "B",
+            "resources": [
+              "teacher_page",
+              "student_detail",
+              "class_stats",
+              "print_export",
+              "provider_config"
+            ],
+            "student": "qa-a",
+            "teacher_authorized_classes": [
+              "A"
+            ]
+          },
+          "key": "AUTH-ALL-ENTRYPOINTS",
+          "target_ids": []
+        }
+      ],
+      "scenario_key": "VOC-AUTH-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "保存真实摄像头与登记/匹配服务证据，分别尝试登录",
+          "expected": {
+            "animation_used_as_identity_proof": false,
+            "enrollment_and_match_verified": true,
+            "registered_session_owner": "qa-a",
+            "uncertain_session_created": false,
+            "unknown_session_created": false
+          },
+          "input": {
+            "attempts": [
+              "registered_person",
+              "unregistered_person",
+              "uncertain_capture"
+            ],
+            "enrollment_actor": "authorized_teacher",
+            "source": "actual_camera",
+            "subject": "qa-a"
+          },
+          "key": "FACE-REAL-REGISTER-MATCH",
+          "target_ids": []
+        }
+      ],
+      "scenario_key": "VOC-FACE-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "使用已补齐题型素材的QA考点版本组题",
+          "expected": {
+            "duplicate_target_count": 0,
+            "future_rescue_selected": false,
+            "selected_target_ids": [
+              "VOCAB-001-a",
+              "VOCAB-003-a",
+              "VOCAB-008-a",
+              "VOCAB-009-a"
+            ]
+          },
+          "input": {
+            "limit": 4,
+            "memories": [
+              {
+                "due": "2026-11-04T23:00:00Z",
+                "state": "rescue",
+                "target_id": "VOCAB-001-a"
+              },
+              {
+                "due": "2026-11-05T12:00:00Z",
+                "state": "rescue",
+                "target_id": "VOCAB-002-a"
+              },
+              {
+                "due": "2026-11-04T00:00:00Z",
+                "retention": 0.81,
+                "state": "review",
+                "target_id": "VOCAB-003-a"
+              },
+              {
+                "due": "2026-11-05T00:00:00Z",
+                "retention": 0.9,
+                "state": "review",
+                "target_id": "VOCAB-008-a"
+              },
+              {
+                "levels": [
+                  "L1",
+                  "L4"
+                ],
+                "quiz_ready": true,
+                "state": "new",
+                "target_id": "VOCAB-009-a"
+              },
+              {
+                "levels": [
+                  "L3"
+                ],
+                "quiz_ready": true,
+                "state": "new",
+                "target_id": "VOCAB-017-a"
+              }
+            ],
+            "now": "2026-11-05T00:00:00Z",
+            "target_levels": [
+              "L1"
+            ]
+          },
+          "key": "QUEUE-DUE-PRIORITY",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-002-a",
+            "VOCAB-003-a",
+            "VOCAB-008-a",
+            "VOCAB-009-a",
+            "VOCAB-017-a"
+          ]
+        },
+        {
+          "action": "无足够可执行考点时请求新测验",
+          "expected": {
+            "artificially_filled_questions": 0,
+            "missing_material_reason_visible": true,
+            "selected_target_ids": []
+          },
+          "input": {
+            "both_future_or_missing_materials": true,
+            "candidate_count": 2,
+            "limit": 8,
+            "target_levels": [
+              "L1"
+            ]
+          },
+          "key": "QUEUE-GAPS-DO-NOT-FILL",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-003-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-QUEUE-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "读取实时记忆分区与可执行状态",
+          "expected": {
+            "eligible": false,
+            "overdue": false,
+            "zone": "consolidated_sleep"
+          },
+          "input": {
+            "anchor": "2026-11-01T00:00:00Z",
+            "next_review_at": "2026-11-05T00:00:00Z",
+            "now": "2026-11-04T23:59:59Z",
+            "rescue": false,
+            "stability_days": 4
+          },
+          "key": "TIME-BEFORE-DUE",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "在90%到期点读取状态",
+          "expected": {
+            "eligible": true,
+            "overdue": false,
+            "retention": 0.9,
+            "tolerance": 1e-09,
+            "zone": "golden_review"
+          },
+          "input": {
+            "anchor": "2026-11-01T00:00:00Z",
+            "next_review_at": "2026-11-05T00:00:00Z",
+            "now": "2026-11-05T00:00:00Z",
+            "rescue": false,
+            "stability_days": 4
+          },
+          "key": "TIME-DUE-EXACT",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "超过原文窗口下界后读取到期任务",
+          "expected": {
+            "eligible": true,
+            "overdue": true,
+            "retention": 0.81,
+            "tolerance": 1e-09,
+            "zone": "golden_review"
+          },
+          "input": {
+            "anchor": "2026-11-01T00:00:00Z",
+            "next_review_at": "2026-11-05T00:00:00Z",
+            "now": "2026-11-09T00:00:00Z",
+            "rescue": false,
+            "stability_days": 4
+          },
+          "key": "TIME-LATE-81",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "跨越S>=30词的真实到期点",
+          "expected": {
+            "eligible": true,
+            "permanently_exempt": false,
+            "retention": 0.9,
+            "tolerance": 1e-09,
+            "zone": "golden_review"
+          },
+          "input": {
+            "anchor": "2026-11-01T00:00:00Z",
+            "next_review_at": "2026-12-13T00:00:00Z",
+            "now": "2026-12-13T00:00:00Z",
+            "rescue": false,
+            "stability_days": 42
+          },
+          "key": "TIME-STABLE-42",
+          "target_ids": [
+            "VOCAB-003-a"
+          ]
+        },
+        {
+          "action": "抢救预约未到时读取状态",
+          "expected": {
+            "eligible": false,
+            "zone": "critical_rescue"
+          },
+          "input": {
+            "anchor": "2026-11-05T00:00:00Z",
+            "next_review_at": "2026-11-05T12:00:00Z",
+            "now": "2026-11-05T06:00:00Z",
+            "rescue": true,
+            "stability_days": 0.5
+          },
+          "key": "TIME-RESCUE-FUTURE",
+          "target_ids": [
+            "VOCAB-008-a"
+          ]
+        },
+        {
+          "action": "在12小时预约点读取抢救任务",
+          "expected": {
+            "eligible": true,
+            "zone": "critical_rescue"
+          },
+          "input": {
+            "anchor": "2026-11-05T00:00:00Z",
+            "next_review_at": "2026-11-05T12:00:00Z",
+            "now": "2026-11-05T12:00:00Z",
+            "rescue": true,
+            "stability_days": 0.5
+          },
+          "key": "TIME-RESCUE-EXACT",
+          "target_ids": [
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-TIME-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "分别提交选项a、b并检查认知目标推荐模式",
+          "expected": {
+            "a_passed": true,
+            "b_passed": false,
+            "correct_option_id": "a",
+            "recommended_mode": "A",
+            "spelling_required": false
+          },
+          "input": {
+            "assessment_goal": "receptive",
+            "context": "Some parents harbor doubts about the new timetable.",
+            "options": {
+              "a": "心怀、抱有",
+              "b": "港口",
+              "c": "收获庄稼",
+              "d": "清点人数"
+            },
+            "origin": "authored_acceptance_fixture",
+            "rescue": true,
+            "target_sense": "心怀疑虑",
+            "translation": "一些家长对新课表心存疑虑。"
+          },
+          "key": "MODE-A-HARBOR-CONTEXT",
+          "target_ids": [
+            "VOCAB-017-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-MODE-A-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "正确拼接；以x1替换p3；撤销后恢复p3并只提交一次",
+          "expected": {
+            "correct_passed": true,
+            "correct_text": "phenomenon",
+            "post_undo_valid_log_count": 1,
+            "wrong_passed": false,
+            "wrong_text": "phenominon"
+          },
+          "input": {
+            "correct_piece_ids": [
+              "p1",
+              "p2",
+              "p3",
+              "p4"
+            ],
+            "origin": "authored_acceptance_fixture",
+            "pieces": [
+              {
+                "id": "p1",
+                "text": "phe"
+              },
+              {
+                "id": "p2",
+                "text": "nom"
+              },
+              {
+                "id": "p3",
+                "text": "e"
+              },
+              {
+                "id": "p4",
+                "text": "non"
+              },
+              {
+                "id": "x1",
+                "text": "i"
+              }
+            ],
+            "target": "phenomenon"
+          },
+          "key": "MODE-B-PHENOMENON",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "按独立ID保留两c两m，再漏掉m2提交",
+          "expected": {
+            "correct_passed": true,
+            "correct_text": "accommodate",
+            "distinct_repeated_piece_ids_preserved": true,
+            "missing_m_passed": false
+          },
+          "input": {
+            "pieces": [
+              {
+                "id": "a",
+                "text": "a"
+              },
+              {
+                "id": "c1",
+                "text": "c"
+              },
+              {
+                "id": "c2",
+                "text": "c"
+              },
+              {
+                "id": "o",
+                "text": "o"
+              },
+              {
+                "id": "m1",
+                "text": "m"
+              },
+              {
+                "id": "m2",
+                "text": "m"
+              },
+              {
+                "id": "tail",
+                "text": "odate"
+              }
+            ],
+            "target": "accommodate"
+          },
+          "key": "MODE-B-REPEATED-LETTERS",
+          "target_ids": [
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-MODE-B-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "按同一冻结题目分别提交四个新answer_id",
+          "expected": {
+            "autocorrect_used": false,
+            "passed": [
+              true,
+              true,
+              false,
+              false
+            ]
+          },
+          "input": {
+            "accepted_answers": [
+              "imperceptible"
+            ],
+            "answers": [
+              " imperceptible ",
+              "Imperceptible",
+              "imperceptable",
+              "perceptible"
+            ],
+            "context": "The camera recorded an i__________ change in brightness.",
+            "origin": "authored_acceptance_fixture",
+            "root_cue": "perceive -> adjective",
+            "translation": "相机记录到了亮度的一个难以察觉的变化。"
+          },
+          "key": "MODE-C-EXACT-SPELLING",
+          "target_ids": [
+            "VOCAB-004-a"
+          ]
+        },
+        {
+          "action": "逐一提交固定词块答案",
+          "expected": {
+            "passed": [
+              true,
+              false,
+              false
+            ]
+          },
+          "input": {
+            "accepted_answers": [
+              "at the expense of"
+            ],
+            "answers": [
+              "at the expense of",
+              "at the expense",
+              "at an expense of"
+            ]
+          },
+          "key": "MODE-C-REQUIRED-PREPOSITION",
+          "target_ids": [
+            "VOCAB-053-a"
+          ]
+        },
+        {
+          "action": "分别按对应句式版本判定倒装与连接词配对",
+          "expected": {
+            "passed": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "separate_form_versions": 2
+          },
+          "input": {
+            "origin": "authored_acceptance_fixture",
+            "sentences": [
+              "Hardly had the bell rung when the students left.",
+              "No sooner had the bell rung than the students left.",
+              "Hardly had the bell rung than the students left.",
+              "No sooner had the bell rung when the students left."
+            ]
+          },
+          "key": "MODE-C-TWO-INVERSION-FORMS",
+          "target_ids": [
+            "VOCAB-058-a",
+            "VOCAB-058-b"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-MODE-C-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "提交三维原始分数，不先做界面取整",
+          "expected": {
+            "consecutive_pass": 0,
+            "difficulty": 6,
+            "next_review_at": "2026-11-05T12:00:00Z",
+            "passed": false,
+            "rescue": true,
+            "stability_days": 0.5
+          },
+          "input": {
+            "correctness": true,
+            "difficulty": 5,
+            "now": "2026-11-05T00:00:00Z",
+            "passing_score": 85,
+            "rescue": false,
+            "stability_days": 4,
+            "voice_dimensions": [
+              84.999,
+              84.999,
+              84.999
+            ]
+          },
+          "key": "SCORE-FAIL-BELOW",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "在等于85的边界提交",
+          "expected": {
+            "difficulty": 4.8,
+            "next_review_at": "2026-11-15T00:00:00Z",
+            "passed": true,
+            "stability_days": 10
+          },
+          "input": {
+            "correctness": true,
+            "difficulty": 5,
+            "now": "2026-11-05T00:00:00Z",
+            "passing_score": 85,
+            "rescue": false,
+            "stability_days": 4,
+            "voice_dimensions": [
+              85,
+              85,
+              85
+            ]
+          },
+          "key": "SCORE-PASS-85",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "在高于85边界提交",
+          "expected": {
+            "difficulty": 4.8,
+            "passed": true,
+            "stability_days": 10
+          },
+          "input": {
+            "correctness": true,
+            "difficulty": 5,
+            "passing_score": 85,
+            "rescue": false,
+            "stability_days": 4,
+            "voice_dimensions": [
+              85.001,
+              85.001,
+              85.001
+            ]
+          },
+          "key": "SCORE-PASS-ABOVE",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "错误字母却高语音分的产出题提交",
+          "expected": {
+            "passed": false,
+            "rescue": true,
+            "stability_days": 0.5
+          },
+          "input": {
+            "accepted_answers": [
+              "phenomenon"
+            ],
+            "correctness": false,
+            "difficulty": 5,
+            "passing_score": 85,
+            "stability_days": 4,
+            "student_input": "phenominon",
+            "voice_dimensions": [
+              99,
+              99,
+              99
+            ]
+          },
+          "key": "SCORE-WRONG-HIGH",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "第一次抢救达标",
+          "expected": {
+            "consecutive_pass": 1,
+            "difficulty": 4.8,
+            "next_review_at": "2026-11-05T12:00:00Z",
+            "passed": true,
+            "rescue": true,
+            "stability_days": 0.5
+          },
+          "input": {
+            "consecutive_pass": 0,
+            "correctness": true,
+            "difficulty": 5,
+            "now": "2026-11-05T00:00:00Z",
+            "rescue": true,
+            "score": 100,
+            "stability_days": 0.5
+          },
+          "key": "SCORE-RESCUE-FIRST-PASS",
+          "target_ids": [
+            "VOCAB-008-a"
+          ]
+        },
+        {
+          "action": "第二次连续抢救达标",
+          "expected": {
+            "consecutive_pass": 2,
+            "difficulty": 4.6,
+            "passed": true,
+            "rescue": false,
+            "stability_days": 2.692031021678297,
+            "tolerance": 1e-09
+          },
+          "input": {
+            "consecutive_pass": 1,
+            "correctness": true,
+            "difficulty": 4.8,
+            "rescue": true,
+            "score": 100,
+            "stability_days": 0.5
+          },
+          "key": "SCORE-RESCUE-SECOND-PASS",
+          "target_ids": [
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-SCORE-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "保存真实音频摘要与服务回执，核对原始内容、三维分数和实际播放",
+          "expected": {
+            "audio_digest_matches": true,
+            "audio_is_real": true,
+            "both_audio_assets_playable": true,
+            "dimensions_finite_and_in_range": true,
+            "response_binding_matches": true
+          },
+          "input": {
+            "answer_id": "qa-voice-a",
+            "audio_playback": [
+              "british",
+              "american"
+            ],
+            "capture": "actual_microphone",
+            "expected_spelling": "phenomenon",
+            "required_dimensions": [
+              "accuracy",
+              "fluency",
+              "completeness"
+            ]
+          },
+          "key": "VOICE-REAL-EVIDENCE",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        },
+        {
+          "action": "分别注入三种明确技术失败后重试原作答",
+          "expected": {
+            "memory_digest_unchanged": true,
+            "states": [
+              "PENDING_RETRY",
+              "PENDING_RETRY",
+              "PENDING_RETRY"
+            ],
+            "student_failures_added": 0,
+            "valid_review_count": 3
+          },
+          "input": {
+            "faults": [
+              "no_audio",
+              "provider_timeout",
+              "uncertain_transcript"
+            ],
+            "initial_valid_review_count": 3
+          },
+          "key": "VOICE-FAULT-NOT-STUDENT-FAILURE",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-VOICE-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "导入来源条目、核对58变体与20音标，并尝试用缺素材条目组题",
+          "expected": {
+            "l1_l4_multitag_records": 15,
+            "l2_source_records": 0,
+            "missing_materials_visible": true,
+            "quiz_ready_source_targets": 0,
+            "source_20_phonetics": 2,
+            "source_58_forms": 2,
+            "source_records": 60,
+            "surface_forms": 61
+          },
+          "input": {
+            "bundle_stage": "source_only",
+            "range": [
+              1,
+              60
+            ],
+            "source": "DOC-VOCAB-02"
+          },
+          "key": "CONTENT-SOURCE-COVERAGE",
+          "target_ids": [
+            "VOCAB-020-a",
+            "VOCAB-058-a",
+            "VOCAB-058-b"
+          ]
+        },
+        {
+          "action": "已有港口义学情时新增心怀义考点，编辑新考点但读取旧流水",
+          "expected": {
+            "new_target_auto_mastered": false,
+            "old_content_version_explainable": true,
+            "separate_learning_units": 2
+          },
+          "input": {
+            "existing_learned_sense": "port",
+            "new_target_sense": "hold_doubts",
+            "senses": [
+              "port",
+              "hold_doubts"
+            ],
+            "surface": "harbor"
+          },
+          "key": "CONTENT-SENSE-HISTORY",
+          "target_ids": [
+            "VOCAB-017-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-CONTENT-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "提交成功后丢回执、三路原正文重投，再同ID改答案",
+          "expected": {
+            "conflict_status": 409,
+            "memory_updates": 1,
+            "review_count_increments": 1,
+            "same_response_replayed": true,
+            "valid_answer_rows": 1
+          },
+          "input": {
+            "answer": "phenomenon",
+            "answer_id": "qa-answer-1",
+            "conflicting_answer": "phenominon",
+            "question_id": "qa-q-1",
+            "same_body_concurrent_replays": 3,
+            "session_id": "qa-session-1",
+            "student_id": "qa-a"
+          },
+          "key": "IDEMPOTENCY-LOST-ACK",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-IDEMPOTENCY-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "由有效流水独立重算并与看板/个人历史核对",
+          "expected": {
+            "empty_class_shows_demo_numbers": false,
+            "failures": 1,
+            "metrics_match_source_rows": true,
+            "passes": 1,
+            "rescue_student_target_pairs": 1,
+            "students_with_results": 2,
+            "valid_results": 2
+          },
+          "input": {
+            "class": "A",
+            "students": [
+              "qa-a",
+              "qa-b"
+            ],
+            "valid_results": [
+              {
+                "passed": false,
+                "student_id": "qa-a",
+                "target": "VOCAB-001-a"
+              },
+              {
+                "passed": true,
+                "student_id": "qa-b",
+                "target": "VOCAB-008-a"
+              }
+            ]
+          },
+          "key": "TEACHER-RECOMPUTABLE-METRICS",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-TEACHER-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "教师修改后提交旧测验，再开启新测验提交同分数",
+          "expected": {
+            "historical_result_overwritten": false,
+            "new_content_version": "qa-content-2",
+            "new_limit": 4,
+            "new_passed": false,
+            "old_content_version": "qa-content-1",
+            "old_limit": 8,
+            "old_passed": true
+          },
+          "input": {
+            "correctness": true,
+            "new_rules": {
+              "content_version": "qa-content-2",
+              "limit": 4,
+              "passing_score": 90
+            },
+            "old_session": {
+              "content_version": "qa-content-1",
+              "limit": 8,
+              "passing_score": 85
+            },
+            "voice_score": 87
+          },
+          "key": "RULES-INFLIGHT-FROZEN",
+          "target_ids": [
+            "VOCAB-001-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-RULES-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "读取唤醒后、免检内、免检到期点的任务，并核对原流水",
+          "expected": {
+            "actor_reason_old_new_time_present": true,
+            "eligible_after_wake": true,
+            "eligible_at_expiry": true,
+            "eligible_during_exemption": false,
+            "original_learning_log_digest_unchanged": true,
+            "override_audit_rows": 2
+          },
+          "input": {
+            "now": "2026-11-05T00:00:00Z",
+            "operations": [
+              {
+                "at": "2026-11-05T00:00:00Z",
+                "kind": "force_wake"
+              },
+              {
+                "at": "2026-11-05T00:01:00Z",
+                "expires_at": "2026-11-06T00:00:00Z",
+                "kind": "exempt_until"
+              }
+            ],
+            "original_memory_already_due": true,
+            "reason": "校内补测安排",
+            "teacher": "qa-authorized-teacher"
+          },
+          "key": "OVERRIDE-EXPIRING-EXEMPTION",
+          "target_ids": [
+            "VOCAB-003-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-OVERRIDE-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "分别打开/打印实际导出并核对学生及词表",
+          "expected": {
+            "all_formats_openable": true,
+            "cross_class_export_rejected": true,
+            "qa_a_words": [
+              "phenomenon"
+            ],
+            "qa_b_words": [
+              "accommodate"
+            ],
+            "unrelated_students": 0
+          },
+          "input": {
+            "class": "A",
+            "formats": [
+              "A4",
+              "html",
+              "doc"
+            ],
+            "rescue": {
+              "qa-a": [
+                "phenomenon"
+              ],
+              "qa-b": [
+                "accommodate"
+              ]
+            }
+          },
+          "key": "PRINT-PER-STUDENT-WORDS",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-PRINT-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "使用实际登记渠道/模型核对能力与秘密隔离，保留服务证据",
+          "expected": {
+            "default_provider": "DashScope",
+            "provider_secrets_independent": true,
+            "secret_echoed_to_browser": false,
+            "student_secret_read_rejected": true,
+            "text_only_model_claimed_voice_pass": false,
+            "unconfigured_claimed_ready": false
+          },
+          "input": {
+            "attempts": [
+              "switch_configured_provider",
+              "voice_on_text_only_model",
+              "unconfigured_provider",
+              "student_read_secret"
+            ],
+            "channels": [
+              "DashScope",
+              "SiliconFlow",
+              "DeepSeek",
+              "Gemini",
+              "OpenAI_or_custom"
+            ],
+            "default": "DashScope"
+          },
+          "key": "CONFIG-REAL-CAPABILITIES",
+          "target_ids": []
+        }
+      ],
+      "scenario_key": "VOC-CONFIG-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "核对战报并退登换人，估算字段显示来源",
+          "expected": {
+            "estimated_fields_labeled": true,
+            "failed": 1,
+            "passed": 2,
+            "prior_session_reusable_after_logout": false,
+            "rescues_released": 1,
+            "stability_changes_match_rows": true,
+            "valid_answers": 3
+          },
+          "input": {
+            "valid_results": [
+              {
+                "new_s": 10,
+                "old_s": 4,
+                "passed": true,
+                "rescue_released": false,
+                "target": "VOCAB-001-a"
+              },
+              {
+                "new_s": 2.692031021678297,
+                "old_s": 0.5,
+                "passed": true,
+                "rescue_released": true,
+                "target": "VOCAB-008-a"
+              },
+              {
+                "new_s": 0.5,
+                "old_s": 4,
+                "passed": false,
+                "rescue_released": false,
+                "target": "VOCAB-009-a"
+              }
+            ]
+          },
+          "key": "REPORT-REAL-SESSION-TOTALS",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-008-a",
+            "VOCAB-009-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-REPORT-01"
+    },
+    {
+      "cases": [
+        {
+          "action": "以独立环境恢复并升级，逐项核对冻结备份点与幂等回执",
+          "expected": {
+            "actual_operator_takeover_recorded": true,
+            "all_compared_data_preserved": true,
+            "consistent_snapshot_verified": true,
+            "duplicate_score_rows": 0,
+            "next_tasks_correct": true,
+            "old_answer_response_replayed": true,
+            "rto_rpo_measured": true
+          },
+          "input": {
+            "compare": [
+              "accounts",
+              "valid_answers",
+              "audio_references",
+              "memory",
+              "next_tasks",
+              "content_policy_history",
+              "teacher_overrides",
+              "print_lists"
+            ],
+            "live_write_during_backup": true,
+            "operations": [
+              "consistent_backup",
+              "isolated_restore",
+              "restart",
+              "migrate_next_app_version",
+              "replay_committed_answer_id"
+            ],
+            "storage": "actual_sqlite"
+          },
+          "key": "RECOVERY-DATA-UPGRADE-REPLAY",
+          "target_ids": [
+            "VOCAB-001-a",
+            "VOCAB-008-a"
+          ]
+        }
+      ],
+      "scenario_key": "VOC-RECOVERY-01"
+    }
+  ],
+  "status": "FIXED_EXPECTATIONS_NOT_EXECUTION_RESULTS"
+}
