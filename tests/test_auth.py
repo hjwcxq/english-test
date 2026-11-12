@@ -146,6 +146,38 @@ class AuthenticationTests(unittest.TestCase):
         self.assertEqual(response.status, 401)
         self.assertEqual(response.json(), {"error": "authentication_required"})
 
+    def test_student_private_paths_reject_expired_and_revoked_cookies(self):
+        _, expired_cookie = self.server.login_demo("demo-zhang")
+        connection = db.connect(self.database)
+        try:
+            connection.execute(
+                "UPDATE sessions SET expires_at = ? WHERE token_digest = ?",
+                (int(time.time()) - 1, auth.token_digest(expired_cookie)),
+            )
+        finally:
+            connection.close()
+        expired = self.server.request(
+            "GET", "/api/student/tasks", cookie=expired_cookie
+        )
+        self.assertEqual(expired.status, 401)
+        self.assertEqual(expired.json(), {"error": "authentication_required"})
+
+        _, revoked_cookie = self.server.login_demo("demo-li")
+        revoked_me = self.server.me(revoked_cookie).json()
+        logout = self.server.request(
+            "POST",
+            "/api/auth/logout",
+            cookie=revoked_cookie,
+            csrf=revoked_me["csrf_token"],
+            origin=TRUSTED_ORIGIN,
+        )
+        self.assertEqual(logout.status, 200)
+        revoked = self.server.request(
+            "GET", "/api/student/tasks", cookie=revoked_cookie
+        )
+        self.assertEqual(revoked.status, 401)
+        self.assertEqual(revoked.json(), {"error": "authentication_required"})
+
     def test_switching_session_requires_current_csrf_and_revokes_old_cookie(self):
         _, first_cookie = self.server.login_teacher()
         first_me = self.server.me(first_cookie).json()

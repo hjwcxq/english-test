@@ -304,6 +304,8 @@ class AppHandler(BaseHTTPRequestHandler):
             )
         elif path == "/api/me":
             self._handle_me()
+        elif self._is_student_private_path(path):
+            self._handle_student_unimplemented()
         elif path == "/api/teacher/students":
             self._handle_teacher_students()
         elif path == "/api/teacher" or path.startswith("/api/teacher/"):
@@ -311,7 +313,7 @@ class AppHandler(BaseHTTPRequestHandler):
         elif path == "/pad":
             self._serve_page("pad.html")
         elif path == "/teacher":
-            self._serve_page("teacher.html")
+            self._handle_teacher_page()
         elif path.startswith("/static/"):
             self._serve_static(path.removeprefix("/static/"))
         elif path == "/favicon.ico":
@@ -328,6 +330,8 @@ class AppHandler(BaseHTTPRequestHandler):
             self._handle_demo_login()
         elif path == "/api/auth/logout":
             self._handle_logout()
+        elif self._is_student_private_path(path):
+            self._handle_student_write()
         elif path == "/api/teacher" or path.startswith("/api/teacher/"):
             self._handle_teacher_unimplemented()
         else:
@@ -448,6 +452,47 @@ class AppHandler(BaseHTTPRequestHandler):
         self._send_json(
             HTTPStatus.OK, {"realm": session["realm"], "students": students}
         )
+
+    @staticmethod
+    def _is_student_private_path(path: str) -> bool:
+        """Match /api/student and its child paths by whole path segment."""
+        return path == "/api/student" or path.startswith("/api/student/")
+
+    def _student_session(self) -> dict | None:
+        session = self._require_session()
+        if session is None:
+            return None
+        if session["role"] != "student":
+            self._send_json(HTTPStatus.FORBIDDEN, {"error": "forbidden"})
+            return None
+        return session
+
+    def _handle_student_unimplemented(self) -> None:
+        session = self._student_session()
+        if session is None:
+            return
+        # The authenticated student's own session/realm is the only scope this
+        # skeleton can serve today; every concrete learning endpoint remains
+        # explicitly unimplemented rather than fabricating W5 success.
+        self._send_json(HTTPStatus.NOT_FOUND, {"error": "not_found"})
+
+    def _handle_student_write(self) -> None:
+        session = self._student_session()
+        if session is None:
+            return
+        if not self._write_guard(session):
+            return
+        self._send_json(HTTPStatus.NOT_FOUND, {"error": "not_found"})
+
+    def _handle_teacher_page(self) -> None:
+        session = self._session()
+        if session is None:
+            self._serve_page("teacher.html")
+            return
+        if session["role"] != "teacher" or session["realm"] != "real":
+            self._send_json(HTTPStatus.FORBIDDEN, {"error": "forbidden"})
+            return
+        self._serve_page("teacher.html")
 
     def _teacher_session(self) -> dict | None:
         session = self._require_session()
