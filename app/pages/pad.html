@@ -10,8 +10,8 @@
   <header>
     <h1>背词助教 · 学生 Pad</h1>
     <div>
-      <button class="secondary" id="fullscreen">全屏</button>
-      <button class="secondary" id="exit">退出</button>
+      <button class="secondary" id="fullscreen" aria-pressed="false">全屏</button>
+      <button class="secondary" id="exit">退出登录</button>
     </div>
   </header>
   <main id="pad-shell" class="pad-shell">
@@ -52,8 +52,12 @@
   </main>
   <script>
     const statusNode = document.getElementById('status');
+    const fullscreenButton = document.getElementById('fullscreen');
+    const exitButton = document.getElementById('exit');
     let csrf = '';
     let current = null;
+    let fullscreenBusy = false;
+    let logoutBusy = false;
 
     function setStatus(text) {
       statusNode.textContent = text;
@@ -114,34 +118,129 @@
       }
     }
 
-    document.getElementById('fullscreen').addEventListener('click', async () => {
-      const shell = document.getElementById('pad-shell');
-      if (!document.fullscreenElement) {
-        await shell.requestFullscreen();
-      } else {
-        await document.exitFullscreen();
+    // The whole document is the fullscreen root so both the fullscreen control
+    // and the student logout control stay inside the fullscreen element tree.
+    function syncFullscreenUi() {
+      const active = Boolean(document.fullscreenElement);
+      fullscreenButton.textContent = active ? '退出全屏' : '全屏';
+      fullscreenButton.setAttribute('aria-pressed', active ? 'true' : 'false');
+    }
+
+    fullscreenButton.addEventListener('click', async () => {
+      if (fullscreenBusy) {
+        return;
+      }
+      fullscreenBusy = true;
+      fullscreenButton.disabled = true;
+      const entering = !document.fullscreenElement;
+      try {
+        if (entering) {
+          if (typeof document.documentElement.requestFullscreen !== 'function') {
+            setStatus('当前浏览器不支持全屏，无法进入');
+            return;
+          }
+          await document.documentElement.requestFullscreen();
+          if (!document.fullscreenElement) {
+            setStatus('全屏进入未确认，请重试');
+          } else {
+            setStatus('已进入全屏');
+          }
+        } else {
+          if (typeof document.exitFullscreen !== 'function') {
+            setStatus('当前浏览器不支持退出全屏');
+            return;
+          }
+          await document.exitFullscreen();
+          if (document.fullscreenElement) {
+            setStatus('退出全屏未确认，请重试');
+          } else {
+            setStatus('已退出全屏');
+          }
+        }
+      } catch (error) {
+        setStatus(entering ? '进入全屏失败，请重试' : '退出全屏失败，请重试');
+      } finally {
+        fullscreenBusy = false;
+        fullscreenButton.disabled = false;
+        syncFullscreenUi();
       }
     });
 
-    document.getElementById('exit').addEventListener('click', async () => {
+    document.addEventListener('fullscreenchange', () => {
+      syncFullscreenUi();
+      setStatus(document.fullscreenElement ? '已进入全屏' : '已退出全屏');
+    });
+
+    document.addEventListener('fullscreenerror', () => {
+      syncFullscreenUi();
+      setStatus('全屏操作失败，请重试');
+    });
+
+    function clearSensitiveState() {
+      current = null;
+      csrf = '';
+      statusNode.textContent = '';
+      if ('caches' in window) {
+        caches.keys()
+          .then((names) => Promise.all(names.map((name) => caches.delete(name))))
+          .catch(() => {});
+      }
+    }
+
+    async function logoutStudent() {
+      if (logoutBusy) {
+        return;
+      }
+      logoutBusy = true;
+      exitButton.disabled = true;
       try {
-        await readMe();
+        // Refresh the short-lived CSRF token from the real server session so a
+        // retry after a failed attempt still targets the persisted session.
+        try {
+          const meResponse = await fetch('/api/me', {credentials: 'same-origin'});
+          if (meResponse.ok) {
+            const me = await meResponse.json();
+            current = me;
+            csrf = me.csrf_token || '';
+          } else {
+            current = null;
+            csrf = '';
+          }
+        } catch (error) {
+          setStatus('退出未确认，请重试');
+          return;
+        }
         const headers = {};
         if (csrf) {
           headers['X-CSRF-Token'] = csrf;
         }
-        await fetch('/api/auth/logout', {
+        const response = await fetch('/api/auth/logout', {
           method: 'POST',
           credentials: 'same-origin',
           headers
         });
+        if (!response.ok) {
+          setStatus('退出未确认，请重试');
+          return;
+        }
+        const payload = await response.json().catch(() => null);
+        if (!payload || payload.ok !== true) {
+          setStatus('退出未确认，请重试');
+          return;
+        }
+        clearSensitiveState();
+        setStatus('已退出当前学生会话');
+      } catch (error) {
+        setStatus('退出未确认，请重试');
       } finally {
-        current = null;
-        csrf = '';
-        setStatus('已退出当前演示会话');
+        logoutBusy = false;
+        exitButton.disabled = false;
       }
-    });
+    }
 
+    exitButton.addEventListener('click', logoutStudent);
+
+    syncFullscreenUi();
     loadDemoStudents().then(readMe).catch(() => setStatus('演示数据加载失败'));
   </script>
 </body>

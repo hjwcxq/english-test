@@ -98,6 +98,56 @@ class TeacherAccessTests(unittest.TestCase):
         self.assertEqual(anonymous.status, 401)
         self.assertEqual(anonymous.json(), {"error": "authentication_required"})
 
+    def test_teacher_page_is_login_for_anonymous_and_403_for_student_sessions(self):
+        anonymous = self.server.request("GET", "/teacher")
+        self.assertEqual(anonymous.status, 200)
+        self.assertIn("教师登录", anonymous.text)
+        self.assertEqual(anonymous.headers["cache-control"], "no-store")
+
+        for student_id in ("demo-zhang", "demo-li", "demo-wang", "demo-chen"):
+            with self.subTest(student_id=student_id):
+                _, cookie = self.server.login_demo(student_id)
+                response = self.server.request("GET", "/teacher", cookie=cookie)
+                self.assertEqual(response.status, 403)
+                self.assertEqual(response.json(), {"error": "forbidden"})
+                self.assertNotIn("教师登录", response.text)
+                self.assertNotIn("教师工作台", response.text)
+                self.assertEqual(response.headers["cache-control"], "no-store")
+
+    def test_teacher_page_and_api_accept_real_teacher_session(self):
+        login, cookie = self.server.login_teacher()
+        self.assertEqual(login.status, 200)
+        page = self.server.request("GET", "/teacher", cookie=cookie)
+        self.assertEqual(page.status, 200)
+        self.assertIn("教师登录", page.text)
+        self.assertIn("待建设", page.text)
+        self.assertEqual(page.headers["cache-control"], "no-store")
+
+        api = self.server.request("GET", "/api/teacher/students", cookie=cookie)
+        self.assertEqual(api.status, 200)
+        self.assertEqual(api.json()["realm"], "real")
+
+    def test_invalid_and_revoked_cookie_are_treated_as_anonymous_for_teacher_page(self):
+        invalid = self.server.request(
+            "GET", "/teacher", cookie="not-a-real-session"
+        )
+        self.assertEqual(invalid.status, 200)
+        self.assertIn("教师登录", invalid.text)
+
+        _, cookie = self.server.login_teacher()
+        me = self.server.me(cookie).json()
+        logout = self.server.request(
+            "POST",
+            "/api/auth/logout",
+            cookie=cookie,
+            csrf=me["csrf_token"],
+            origin="http://127.0.0.1:8000",
+        )
+        self.assertEqual(logout.status, 200)
+        revoked = self.server.request("GET", "/teacher", cookie=cookie)
+        self.assertEqual(revoked.status, 200)
+        self.assertIn("教师登录", revoked.text)
+
     def test_teacher_only_sees_authorised_class_and_realm(self):
         _, cookie = self.server.login_teacher()
         response = self.server.request(
